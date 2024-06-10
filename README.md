@@ -1,7 +1,8 @@
 # 1000 JavaScript Tips
 
+
 <details><summary>2. Use 'const' and 'let' instead of 'var'</summary>
-Using 'const' and 'let' helps avoid common pitfalls associated with variable scoping in JavaScript. 'const' is used for variables that should not be reassigned, providing more predictable and maintainable code. 'let' is used for variables that can change, but it is block-scoped, reducing the chances of bugs related to variable hoisting. For more information, refer to the [MDN Web Docs on const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) and [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let).
+Using 'const' and 'let' helps avoid common pitfalls associated with variable scoping in JavaScript. 'const' is used for variables that should not be reassigned, providing more predictable and maintainable code. 'let' is used for variables that can change, but it is block-scoped, reducing the chances of bugs related to variable hoisting. For more information, refer to the [MDN Web Docs on const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) and [MDN Web Docs on let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let).
 </details>
 
 <details><summary>3. Sanitize User Input</summary>

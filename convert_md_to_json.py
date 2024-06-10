@@ -1,6 +1,7 @@
 import json
 import re
 
+
 def parse_markdown(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
@@ -11,17 +12,23 @@ def parse_markdown(file_path):
 
     tips = []
     for match in matches:
-        # remove leading number with . and space from summary we should have used a better regex
-
+        # Remove leading number with . and space from summary
         summary = match[0].strip().split('. ', 1)[1]
+
         content = match[1].strip()
+
+        # Convert markdown links to HTML links
+        content = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', content)
+
         tips.append({"summary": summary, "content": content})
 
     return tips
 
+
 def save_to_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
+
 
 if __name__ == "__main__":
     markdown_file = 'README.md'
