@@ -38,5 +38,45 @@
     {
         "summary": "Handle Errors Gracefully",
         "content": "Always include error handling in your code to manage potential issues gracefully. Use try/catch blocks for synchronous code and .catch() or async/await with try/catch for asynchronous code. Proper error handling ensures your application can recover from unexpected situations and provide meaningful feedback to users. Learn more about error handling in JavaScript on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#exception_handling_statements\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Template Literals",
+        "content": "Template literals provide an easy and readable way to create strings. They allow for embedded expressions and multiline strings, which can simplify string creation and manipulation. Use backticks (\\`) to define template literals and include expressions within ${} brackets. Learn more about template literals on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Spread Operator",
+        "content": "The spread operator (...) allows for easy copying and merging of arrays and objects, and can also be used for function arguments. It provides a concise and readable way to manipulate collections of data. Learn more about the spread operator on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Default Parameters",
+        "content": "Default parameters allow you to specify default values for function parameters if no arguments are provided. This can simplify function definitions and provide more robust default behavior. Learn more about default parameters on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Destructuring Assignment",
+        "content": "Destructuring assignment allows you to unpack values from arrays or properties from objects into distinct variables. This can simplify the extraction of values and make your code more readable. Learn more about destructuring on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Arrow Functions",
+        "content": "Arrow functions provide a shorter syntax for writing function expressions and lexically bind the `this` value. This can make your code more concise and predictable. Learn more about arrow functions on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Map and Set",
+        "content": "Map and Set are built-in data structures that provide more functionality and performance compared to plain objects and arrays. Use Map for key-value pairs and Set for unique values. Learn more about <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map\">Map</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set\">Set</a> on MDN Web Docs."
+    },
+    {
+        "summary": "Use for...of Loop",
+        "content": "The for...of loop provides a simpler and more readable way to iterate over iterable objects like arrays, strings, and NodeLists. It avoids the pitfalls of traditional for loops and provides a cleaner syntax. Learn more about the for...of loop on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Async Iterators",
+        "content": "Async iterators and the for await...of loop allow you to iterate over asynchronous data sources in a clean and readable manner. This can simplify the handling of asynchronous streams of data. Learn more about async iterators on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Optional Chaining",
+        "content": "Optional chaining (?.) allows you to safely access deeply nested properties without having to explicitly check for the existence of each level in the property chain. This can simplify your code and prevent runtime errors. Learn more about optional chaining on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Nullish Coalescing",
+        "content": "The nullish coalescing operator (??) provides a way to handle default values when dealing with null or undefined. It is a cleaner alternative to using logical OR (||) for default values. Learn more about nullish coalescing on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator\">MDN Web Docs</a>."
     }
 ]
