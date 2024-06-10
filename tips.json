@@ -78,5 +78,525 @@
     {
         "summary": "Use Nullish Coalescing",
         "content": "The nullish coalescing operator (??) provides a way to handle default values when dealing with null or undefined. It is a cleaner alternative to using logical OR (||) for default values. Learn more about nullish coalescing on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Rest Parameter",
+        "content": "The rest parameter syntax (...) allows you to represent an indefinite number of arguments as an array. This is useful in functions where you don't know the exact number of arguments beforehand. Learn more about rest parameters on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Functional Programming Techniques",
+        "content": "Functional programming techniques like map, filter, and reduce can make your code more concise and easier to understand. They allow you to operate on collections of data in a declarative manner. Learn more about functional programming in JavaScript on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#functional_programming\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Object Spread Operator",
+        "content": "The object spread operator (...) allows you to create shallow copies of objects and merge multiple objects into one. This is useful for immutability and combining object properties. Learn more about the object spread operator on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Default Case in Switch Statements",
+        "content": "Always include a default case in switch statements to handle unexpected values. This ensures that your code can handle any input, even if it doesn't match any of the specified cases. Learn more about switch statements on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Event Delegation",
+        "content": "Event delegation is a technique that allows you to handle events efficiently by attaching a single event listener to a parent element. This listener analyzes bubbled events to find a match on child elements. Learn more about event delegation on <a href=\"https://javascript.info/event-delegation\">JavaScript.info</a>."
+    },
+    {
+        "summary": "Use Local Storage and Session Storage",
+        "content": "Local storage and session storage provide a way to store data on the client side. Local storage persists data across sessions, while session storage only lasts for the duration of the page session. Learn more about local and session storage on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Fetch API",
+        "content": "The Fetch API provides a modern, promise-based way to make network requests. It is a more powerful and flexible alternative to XMLHttpRequest. Learn more about the Fetch API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Async Functions for Concurrency",
+        "content": "Async functions, when combined with the await keyword, provide a clean and intuitive way to handle asynchronous operations. They make your code look synchronous and are easier to read and maintain. Learn more about async functions on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Module Pattern",
+        "content": "The module pattern is a design pattern that provides a way to encapsulate private and public methods and variables. It helps in organizing and structuring your code. Learn more about the module pattern on <a href=\"https://javascript.info/modules\">JavaScript.info</a>."
+    },
+    {
+        "summary": "Use Object Destructuring",
+        "content": "Object destructuring allows you to extract properties from objects and bind them to variables. This can make your code more concise and readable. Learn more about object destructuring on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Named Parameters",
+        "content": "Using named parameters in your functions can make your code more readable and flexible. Instead of passing a list of arguments, you pass an object with named properties. Learn more about named parameters on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#using_destructuring_with_default_parameters\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Proxy Object",
+        "content": "The Proxy object allows you to create a proxy for another object, which can intercept and redefine fundamental operations for that object. This can be useful for implementing custom behavior. Learn more about the Proxy object on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use WeakMap and WeakSet",
+        "content": "WeakMap and WeakSet are collections that allow for weak references to objects. This means that if no other references to an object exist, it can be garbage collected. Learn more about <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap\">WeakMap</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet\">WeakSet</a> on MDN Web Docs."
+    },
+    {
+        "summary": "Use Generators for Iteration",
+        "content": "Generators are functions that can be paused and resumed, allowing you to define iterative algorithms by writing code that produces a sequence of results. Learn more about generators on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Custom Elements",
+        "content": "Custom elements allow you to create your own HTML tags and define their behavior using JavaScript. This is part of the Web Components standard. Learn more about custom elements on <a href=\"https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Intersection Observer API",
+        "content": "The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. Learn more about the Intersection Observer API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Performance API",
+        "content": "The Performance API provides a way to measure the performance of your web applications. You can use it to track various performance metrics and optimize your code accordingly. Learn more about the Performance API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Performance\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Clipboard API",
+        "content": "The Clipboard API provides a way to interact with the clipboard, enabling you to copy and paste text programmatically. This can be useful for building rich text editors and other interactive applications. Learn more about the Clipboard API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Resize Observer API",
+        "content": "The Resize Observer API provides a way to observe changes to the size of an element. This is useful for responsive design and ensuring your UI adapts to different screen sizes and orientations. Learn more about the Resize Observer API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Mutation Observer API",
+        "content": "The Mutation Observer API provides a way to observe changes to the DOM tree. This can be useful for building dynamic user interfaces and ensuring your application responds to changes in the DOM. Learn more about the Mutation Observer API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Service Workers",
+        "content": "Service workers provide a way to run scripts in the background and handle network requests, enabling you to create offline-first web applications. Learn more about service workers on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use IndexedDB for Client-Side Storage",
+        "content": "IndexedDB is a low-level API for storing large amounts of structured data on the client side. It provides a way to store data in a transactional and queryable manner. Learn more about IndexedDB on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Broadcast Channel API",
+        "content": "The Broadcast Channel API provides a way to communicate between browsing contexts (such as iframes, tabs, or workers) that share the same origin. Learn more about the Broadcast Channel API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Animations API",
+        "content": "The Web Animations API provides a way to create complex animations using JavaScript, offering more control and flexibility than CSS animations. Learn more about the Web Animations API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Speech Recognition API",
+        "content": "The Speech Recognition API provides a way to convert speech to text, enabling you to build voice-controlled applications. Learn more about the Speech Recognition API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Speech Synthesis API",
+        "content": "The Speech Synthesis API provides a way to convert text to speech, enabling you to build applications that can speak to the user. Learn more about the Speech Synthesis API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Geolocation API",
+        "content": "The Geolocation API provides a way to get the geographical position of a device. This can be useful for building location-based applications. Learn more about the Geolocation API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Battery Status API",
+        "content": "The Battery Status API provides a way to get information about the battery status of the device. This can be useful for building applications that optimize their behavior based on the battery level. Learn more about the Battery Status API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Device Orientation API",
+        "content": "The Device Orientation API provides a way to get information about the physical orientation of the device. This can be useful for building applications that respond to device movements. Learn more about the Device Orientation API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Device_Orientation_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Network Information API",
+        "content": "The Network Information API provides a way to get information about the network connection of the device. This can be useful for building applications that optimize their behavior based on the network conditions. Learn more about the Network Information API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Payment Request API",
+        "content": "The Payment Request API provides a way to simplify the process of collecting payment information from the user. It enables you to create a consistent and secure payment experience. Learn more about the Payment Request API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Notifications API",
+        "content": "The Notifications API provides a way to display notifications to the user. This can be useful for keeping the user informed about important events or updates. Learn more about the Notifications API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Vibration API",
+        "content": "The Vibration API provides a way to vibrate the device. This can be useful for providing haptic feedback in your applications. Learn more about the Vibration API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Gamepad API",
+        "content": "The Gamepad API provides a way to interact with game controllers. This can be useful for building games or applications that require game controller input. Learn more about the Gamepad API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebRTC API",
+        "content": "The WebRTC API provides a way to build real-time communication applications, such as video and voice chat. Learn more about the WebRTC API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebSocket API",
+        "content": "The WebSocket API provides a way to create a persistent connection between the client and the server, enabling real-time communication. Learn more about the WebSocket API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the File API",
+        "content": "The File API provides a way to interact with files on the user's device. This can be useful for building applications that need to read or write files. Learn more about the File API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/File_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Streams API",
+        "content": "The Streams API provides a way to handle streaming data, enabling you to process data as it is being received. Learn more about the Streams API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Streams_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the History API",
+        "content": "The History API provides a way to manipulate the browser's session history, enabling you to build single-page applications with a navigation history. Learn more about the History API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/History_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Audio API",
+        "content": "The Web Audio API provides a way to process and synthesize audio in web applications. It enables you to build complex audio applications and games. Learn more about the Web Audio API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebGL API",
+        "content": "The WebGL API provides a way to render 3D graphics in web applications. It enables you to build complex visualizations and games. Learn more about the WebGL API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Drag and Drop API",
+        "content": "The Drag and Drop API provides a way to implement drag-and-drop functionality in your web applications. This can be useful for building interactive user interfaces. Learn more about the Drag and Drop API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Shadow DOM",
+        "content": "The Shadow DOM provides a way to encapsulate the internal structure of a web component, ensuring that its styles and behavior do not affect the rest of the document. Learn more about the Shadow DOM on <a href=\"https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the File System Access API",
+        "content": "The File System Access API provides a way to read and write files on the user's local file system. This can be useful for building applications that need to manage files locally. Learn more about the File System Access API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Ambient Light Sensor API",
+        "content": "The Ambient Light Sensor API provides a way to get information about the ambient light level around the device. This can be useful for building applications that adapt to the lighting conditions. Learn more about the Ambient Light Sensor API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/AmbientLightSensor\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Screen Orientation API",
+        "content": "The Screen Orientation API provides a way to get and set the orientation of the screen. This can be useful for building applications that need to adapt to different screen orientations. Learn more about the Screen Orientation API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Screen_Orientation_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Media Session API",
+        "content": "The Media Session API provides a way to customize media notifications and handle media playback actions. This can be useful for building media applications with enhanced user experiences. Learn more about the Media Session API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Picture-in-Picture API",
+        "content": "The Picture-in-Picture API provides a way to display video in a small overlay window that remains on top of other windows. This can be useful for building video applications with enhanced user experiences. Learn more about the Picture-in-Picture API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Payment Handler API",
+        "content": "The Payment Handler API provides a way to create web-based payment apps that can handle payment requests from other web applications. Learn more about the Payment Handler API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Payment_Handler_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Bluetooth API",
+        "content": "The Web Bluetooth API provides a way to connect to Bluetooth devices directly from a web application. This can be useful for building applications that need to interact with Bluetooth peripherals. Learn more about the Bluetooth API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebUSB API",
+        "content": "The WebUSB API provides a way to connect to USB devices directly from a web application. This can be useful for building applications that need to interact with USB peripherals. Learn more about the WebUSB API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/USB\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Serial API",
+        "content": "The Web Serial API provides a way to connect to serial devices directly from a web application. This can be useful for building applications that need to interact with serial peripherals. Learn more about the Serial API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Serial\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the NFC API",
+        "content": "The Web NFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the NFC API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Background Sync API",
+        "content": "The Background Sync API provides a way to defer actions until the user has a stable internet connection. This can be useful for building applications that need to handle intermittent connectivity. Learn more about the Background Sync API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Background_Sync_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Badging API",
+        "content": "The Badging API provides a way to set an application-wide badge, typically shown on the app's icon. This can be useful for providing users with status or notification indicators. Learn more about the Badging API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Badging_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Wake Lock API",
+        "content": "The Wake Lock API provides a way to prevent the device from dimming or locking the screen. This can be useful for applications that need to keep the screen on while in use. Learn more about the Wake Lock API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Wake_Lock_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Share API",
+        "content": "The Web Share API provides a way to share text, links, and files to other apps installed on the device. This can be useful for building applications that need to share content with other apps. Learn more about the Web Share API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Contact Picker API",
+        "content": "The Contact Picker API provides a way to select contacts from the user's address book. This can be useful for building applications that need to interact with the user's contacts. Learn more about the Contact Picker API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Sensor APIs",
+        "content": "The Sensor APIs provide a way to access various sensors on the device, such as the accelerometer, gyroscope, and magnetometer. This can be useful for building applications that need to interact with the device's sensors. Learn more about the Sensor APIs on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Visual Viewport API",
+        "content": "The Visual Viewport API provides a way to access information about the visual viewport, including its size and position. This can be useful for building responsive web applications that adapt to different screen sizes. Learn more about the Visual Viewport API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebVR API",
+        "content": "The WebVR API provides a way to create virtual reality experiences in web applications. This can be useful for building immersive web applications that provide VR experiences. Learn more about the WebVR API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebXR API",
+        "content": "The WebXR API provides a way to create augmented reality and virtual reality experiences in web applications. This can be useful for building immersive web applications that provide AR and VR experiences. Learn more about the WebXR API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Credential Management API",
+        "content": "The Credential Management API provides a way to handle user credentials, such as passwords and federated identities. This can be useful for building applications that require user authentication. Learn more about the Credential Management API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Authentication API",
+        "content": "The Web Authentication API provides a way to use public key cryptography for user authentication. This can be useful for building applications that require strong user authentication. Learn more about the Web Authentication API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Encrypted Media Extensions API",
+        "content": "The Encrypted Media Extensions API provides a way to play encrypted media content in web applications. This can be useful for building applications that need to handle DRM-protected content. Learn more about the Encrypted Media Extensions API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Media Source Extensions API",
+        "content": "The Media Source Extensions API provides a way to create streams for playback in web applications. This can be useful for building applications that need to handle adaptive streaming. Learn more about the Media Source Extensions API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebCodecs API",
+        "content": "The WebCodecs API provides a way to encode and decode audio and video in web applications. This can be useful for building applications that need to handle media processing. Learn more about the WebCodecs API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebGPU API",
+        "content": "The WebGPU API provides a way to use the GPU for rendering and computation in web applications. This can be useful for building applications that need to handle high-performance graphics and computations. Learn more about the WebGPU API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebHID API",
+        "content": "The WebHID API provides a way to interact with human interface devices, such as keyboards and game controllers. This can be useful for building applications that need to handle input from HID devices. Learn more about the WebHID API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebMIDI API",
+        "content": "The WebMIDI API provides a way to interact with MIDI devices, such as musical instruments. This can be useful for building applications that need to handle input from MIDI devices. Learn more about the WebMIDI API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebNFC API",
+        "content": "The WebNFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the WebNFC API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebOTP API",
+        "content": "The WebOTP API provides a way to handle one-time passwords in web applications. This can be useful for building applications that require user authentication. Learn more about the WebOTP API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebUSB API",
+        "content": "The WebUSB API provides a way to connect to USB devices directly from a web application. This can be useful for building applications that need to interact with USB peripherals. Learn more about the WebUSB API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/USB\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Serial API",
+        "content": "The Web Serial API provides a way to connect to serial devices directly from a web application. This can be useful for building applications that need to interact with serial peripherals. Learn more about the Web Serial API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Serial\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the NFC API",
+        "content": "The Web NFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the NFC API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Background Sync API",
+        "content": "The Background Sync API provides a way to defer actions until the user has a stable internet connection. This can be useful for building applications that need to handle intermittent connectivity. Learn more about the Background Sync API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Background_Sync_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Badging API",
+        "content": "The Badging API provides a way to set an application-wide badge, typically shown on the app's icon. This can be useful for providing users with status or notification indicators. Learn more about the Badging API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Badging_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Wake Lock API",
+        "content": "The Wake Lock API provides a way to prevent the device from dimming or locking the screen. This can be useful for applications that need to keep the screen on while in use. Learn more about the Wake Lock API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Wake_Lock_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Share API",
+        "content": "The Web Share API provides a way to share text, links, and files to other apps installed on the device. This can be useful for building applications that need to share content with other apps. Learn more about the Web Share API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Contact Picker API",
+        "content": "The Contact Picker API provides a way to select contacts from the user's address book. This can be useful for building applications that need to interact with the user's contacts. Learn more about the Contact Picker API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Sensor APIs",
+        "content": "The Sensor APIs provide a way to access various sensors on the device, such as the accelerometer, gyroscope, and magnetometer. This can be useful for building applications that need to interact with the device's sensors. Learn more about the Sensor APIs on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Visual Viewport API",
+        "content": "The Visual Viewport API provides a way to access information about the visual viewport, including its size and position. This can be useful for building responsive web applications that adapt to different screen sizes. Learn more about the Visual Viewport API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebVR API",
+        "content": "The WebVR API provides a way to create virtual reality experiences in web applications. This can be useful for building immersive web applications that provide VR experiences. Learn more about the WebVR API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebXR API",
+        "content": "The WebXR API provides a way to create augmented reality and virtual reality experiences in web applications. This can be useful for building immersive web applications that provide AR and VR experiences. Learn more about the WebXR API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Credential Management API",
+        "content": "The Credential Management API provides a way to handle user credentials, such as passwords and federated identities. This can be useful for building applications that require user authentication. Learn more about the Credential Management API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Authentication API",
+        "content": "The Web Authentication API provides a way to use public key cryptography for user authentication. This can be useful for building applications that require strong user authentication. Learn more about the Web Authentication API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Encrypted Media Extensions API",
+        "content": "The Encrypted Media Extensions API provides a way to play encrypted media content in web applications. This can be useful for building applications that need to handle DRM-protected content. Learn more about the Encrypted Media Extensions API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Media Source Extensions API",
+        "content": "The Media Source Extensions API provides a way to create streams for playback in web applications. This can be useful for building applications that need to handle adaptive streaming. Learn more about the Media Source Extensions API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebCodecs API",
+        "content": "The WebCodecs API provides a way to encode and decode audio and video in web applications. This can be useful for building applications that need to handle media processing. Learn more about the WebCodecs API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebGPU API",
+        "content": "The WebGPU API provides a way to use the GPU for rendering and computation in web applications. This can be useful for building applications that need to handle high-performance graphics and computations. Learn more about the WebGPU API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebHID API",
+        "content": "The WebHID API provides a way to interact with human interface devices, such as keyboards and game controllers. This can be useful for building applications that need to handle input from HID devices. Learn more about the WebHID API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebMIDI API",
+        "content": "The WebMIDI API provides a way to interact with MIDI devices, such as musical instruments. This can be useful for building applications that need to handle input from MIDI devices. Learn more about the WebMIDI API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebNFC API",
+        "content": "The WebNFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the WebNFC API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebOTP API",
+        "content": "The WebOTP API provides a way to handle one-time passwords in web applications. This can be useful for building applications that require user authentication. Learn more about the WebOTP API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use async/await for Promises",
+        "content": "Async/await syntax allows you to write asynchronous code that looks synchronous, improving readability and maintainability. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use ES6 Classes",
+        "content": "ES6 classes provide a clear syntax for creating objects and dealing with inheritance in JavaScript. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Template Literals for Strings",
+        "content": "Template literals allow for embedded expressions and multiline strings, making string manipulation easier. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Map and Set for Collections",
+        "content": "Map and Set provide efficient ways to store and manage unique values and key-value pairs. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map\">MDN Web Docs</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Object Destructuring",
+        "content": "Destructuring allows for extracting properties from objects and arrays into distinct variables, improving code readability. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Default Parameters in Functions",
+        "content": "Default parameters allow you to initialize function parameters with default values if no arguments are passed. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Optional Chaining (?.)",
+        "content": "Optional chaining simplifies accessing deeply nested properties without having to explicitly check for each level's existence. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Nullish Coalescing (??)",
+        "content": "The nullish coalescing operator provides a way to handle default values when dealing with null or undefined, improving code clarity. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Arrow Functions for Short Syntax",
+        "content": "Arrow functions provide a concise syntax for writing functions and lexically bind the `this` value. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Promises for Asynchronous Operations",
+        "content": "Promises provide a cleaner way to handle asynchronous operations compared to callbacks, making your code more readable and maintainable. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Fetch API for Network Requests",
+        "content": "The Fetch API is a modern replacement for XMLHttpRequest, providing a more powerful and flexible way to make HTTP requests. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Intersection Observer API",
+        "content": "The Intersection Observer API allows you to asynchronously observe changes in the intersection of a target element with an ancestor element or viewport. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Performance API",
+        "content": "The Performance API provides detailed timing data for the various stages of your page's loading, helping you optimize performance. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Performance\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Service Workers for Offline Support",
+        "content": "Service workers enable you to create offline-first web applications by intercepting network requests and serving cached resources. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use WebSockets for Real-Time Communication",
+        "content": "WebSockets provide a way to open a persistent connection between the client and server for real-time communication. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Local Storage and Session Storage",
+        "content": "Local storage and session storage provide ways to store data on the client side, persisting across sessions or page reloads. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Animations API",
+        "content": "The Web Animations API provides a way to create complex animations using JavaScript, offering more control and flexibility than CSS animations. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Clipboard API",
+        "content": "The Clipboard API provides a way to interact with the clipboard, enabling you to copy and paste text programmatically. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Mutation Observer API",
+        "content": "The Mutation Observer API provides a way to observe changes to the DOM tree, useful for dynamic UI updates. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Resize Observer API",
+        "content": "The Resize Observer API provides a way to observe changes to the size of an element, useful for responsive design. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Broadcast Channel API",
+        "content": "The Broadcast Channel API provides a way to communicate between browsing contexts (tabs, iframes) that share the same origin. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the File API",
+        "content": "The File API provides a way to interact with files on the user's device, useful for reading and writing files. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/File_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Payment Request API",
+        "content": "The Payment Request API provides a way to simplify the process of collecting payment information from users, improving the user experience. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Notifications API",
+        "content": "The Notifications API enables web applications to display notifications to the user, even when the application is not in focus. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Vibration API",
+        "content": "The Vibration API allows web applications to provide haptic feedback by triggering device vibrations. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Geolocation API",
+        "content": "The Geolocation API provides a way to get the geographical position of the device, useful for location-based services. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Battery Status API",
+        "content": "The Battery Status API provides information about the battery status of the device, helping optimize app behavior based on power availability. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Device Orientation API",
+        "content": "The Device Orientation API provides information about the physical orientation of the device, useful for building responsive applications. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Device_Orientation_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Network Information API",
+        "content": "The Network Information API provides information about the network connection of the device, allowing apps to adjust behavior based on network conditions. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Gamepad API",
+        "content": "The Gamepad API provides a way to interact with game controllers, enabling the creation of web-based games with gamepad support. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the WebRTC API",
+        "content": "The WebRTC API enables real-time communication capabilities in web applications, such as audio, video, and data sharing. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the History API",
+        "content": "The History API provides methods to interact with the browser's history, useful for creating single-page applications with dynamic navigation. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/History_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Audio API",
+        "content": "The Web Audio API provides advanced capabilities for audio processing and synthesis directly in the web browser, useful for building audio applications. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Web Animations API",
+        "content": "The Web Animations API allows for creating complex animations using JavaScript, offering greater control than CSS animations. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Shadow DOM",
+        "content": "The Shadow DOM allows you to encapsulate your component's internal structure, ensuring styles and behavior are scoped to the component. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the File System Access API",
+        "content": "The File System Access API provides methods to read and write files on the user's local file system, useful for web applications that need to handle local files. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API\">MDN Web Docs</a>."
     }
 ]

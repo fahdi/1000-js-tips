@@ -455,3 +455,147 @@ The WebNFC API provides a way to read and write NFC tags directly from a web app
 <details><summary>114. Use the WebOTP API</summary>
 The WebOTP API provides a way to handle one-time passwords in web applications. This can be useful for building applications that require user authentication. Learn more about the WebOTP API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API).
 </details>
+
+<details><summary>115. Use async/await for Promises</summary>
+Async/await syntax allows you to write asynchronous code that looks synchronous, improving readability and maintainability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
+</details>
+
+<details><summary>116. Use ES6 Classes</summary>
+ES6 classes provide a clear syntax for creating objects and dealing with inheritance in JavaScript. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).
+</details>
+
+<details><summary>117. Use Template Literals for Strings</summary>
+Template literals allow for embedded expressions and multiline strings, making string manipulation easier. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+</details>
+
+<details><summary>118. Use Map and Set for Collections</summary>
+Map and Set provide efficient ways to store and manage unique values and key-value pairs. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).
+</details>
+
+<details><summary>119. Use Object Destructuring</summary>
+Destructuring allows for extracting properties from objects and arrays into distinct variables, improving code readability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
+</details>
+
+<details><summary>120. Use Default Parameters in Functions</summary>
+Default parameters allow you to initialize function parameters with default values if no arguments are passed. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
+</details>
+
+<details><summary>121. Use Optional Chaining (?.)</summary>
+Optional chaining simplifies accessing deeply nested properties without having to explicitly check for each level's existence. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
+</details>
+
+<details><summary>122. Use Nullish Coalescing (??)</summary>
+The nullish coalescing operator provides a way to handle default values when dealing with null or undefined, improving code clarity. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator).
+</details>
+
+<details><summary>123. Use Arrow Functions for Short Syntax</summary>
+Arrow functions provide a concise syntax for writing functions and lexically bind the `this` value. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+</details>
+
+<details><summary>124. Use Promises for Asynchronous Operations</summary>
+Promises provide a cleaner way to handle asynchronous operations compared to callbacks, making your code more readable and maintainable. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+</details>
+
+<details><summary>125. Use the Fetch API for Network Requests</summary>
+The Fetch API is a modern replacement for XMLHttpRequest, providing a more powerful and flexible way to make HTTP requests. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+</details>
+
+<details><summary>126. Use the Intersection Observer API</summary>
+The Intersection Observer API allows you to asynchronously observe changes in the intersection of a target element with an ancestor element or viewport. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+</details>
+
+<details><summary>127. Use the Performance API</summary>
+The Performance API provides detailed timing data for the various stages of your page's loading, helping you optimize performance. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Performance).
+</details>
+
+<details><summary>128. Use Service Workers for Offline Support</summary>
+Service workers enable you to create offline-first web applications by intercepting network requests and serving cached resources. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
+</details>
+
+<details><summary>129. Use WebSockets for Real-Time Communication</summary>
+WebSockets provide a way to open a persistent connection between the client and server for real-time communication. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
+</details>
+
+<details><summary>130. Use Local Storage and Session Storage</summary>
+Local storage and session storage provide ways to store data on the client side, persisting across sessions or page reloads. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+</details>
+
+<details><summary>131. Use the Web Animations API</summary>
+The Web Animations API provides a way to create complex animations using JavaScript, offering more control and flexibility than CSS animations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API).
+</details>
+
+<details><summary>132. Use the Clipboard API</summary>
+The Clipboard API provides a way to interact with the clipboard, enabling you to copy and paste text programmatically. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
+</details>
+
+<details><summary>133. Use the Mutation Observer API</summary>
+The Mutation Observer API provides a way to observe changes to the DOM tree, useful for dynamic UI updates. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
+</details>
+
+<details><summary>134. Use the Resize Observer API</summary>
+The Resize Observer API provides a way to observe changes to the size of an element, useful for responsive design. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API).
+</details>
+
+<details><summary>135. Use the Broadcast Channel API</summary>
+The Broadcast Channel API provides a way to communicate between browsing contexts (tabs, iframes) that share the same origin. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API).
+</details>
+
+<details><summary>136. Use the File API</summary>
+The File API provides a way to interact with files on the user's device, useful for reading and writing files. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/File_API).
+</details>
+
+<details><summary>137. Use the Payment Request API</summary>
+The Payment Request API provides a way to simplify the process of collecting payment information from users, improving the user experience. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API).
+</details>
+
+<details><summary>138. Use the Notifications API</summary>
+The Notifications API enables web applications to display notifications to the user, even when the application is not in focus. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API).
+</details>
+
+<details><summary>139. Use the Vibration API</summary>
+The Vibration API allows web applications to provide haptic feedback by triggering device vibrations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API).
+</details>
+
+<details><summary>140. Use the Geolocation API</summary>
+The Geolocation API provides a way to get the geographical position of the device, useful for location-based services. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
+</details>
+
+<details><summary>141. Use the Battery Status API</summary>
+The Battery Status API provides information about the battery status of the device, helping optimize app behavior based on power availability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API).
+</details>
+
+<details><summary>142. Use the Device Orientation API</summary>
+The Device Orientation API provides information about the physical orientation of the device, useful for building responsive applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Device_Orientation_API).
+</details>
+
+<details><summary>143. Use the Network Information API</summary>
+The Network Information API provides information about the network connection of the device, allowing apps to adjust behavior based on network conditions. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API).
+</details>
+
+<details><summary>144. Use the Gamepad API</summary>
+The Gamepad API provides a way to interact with game controllers, enabling the creation of web-based games with gamepad support. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API).
+</details>
+
+<details><summary>145. Use the WebRTC API</summary>
+The WebRTC API enables real-time communication capabilities in web applications, such as audio, video, and data sharing. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API).
+</details>
+
+<details><summary>146. Use the History API</summary>
+The History API provides methods to interact with the browser's history, useful for creating single-page applications with dynamic navigation. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/History_API).
+</details>
+
+<details><summary>147. Use the Web Audio API</summary>
+The Web Audio API provides advanced capabilities for audio processing and synthesis directly in the web browser, useful for building audio applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
+</details>
+
+<details><summary>148. Use the Web Animations API</summary>
+The Web Animations API allows for creating complex animations using JavaScript, offering greater control than CSS animations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API).
+</details>
+
+<details><summary>149. Use the Shadow DOM</summary>
+The Shadow DOM allows you to encapsulate your component's internal structure, ensuring styles and behavior are scoped to the component. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
+</details>
+
+<details><summary>150. Use the File System Access API</summary>
+The File System Access API provides methods to read and write files on the user's local file system, useful for web applications that need to handle local files. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API).
+</details>
