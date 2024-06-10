@@ -1,42 +1,42 @@
 [
     {
         "summary": "Use 'const' and 'let' instead of 'var'",
-        "content": "Using 'const' and 'let' helps avoid common pitfalls associated with variable scoping in JavaScript. 'const' is used for variables that should not be reassigned, providing more predictable and maintainable code. 'let' is used for variables that can change, but it is block-scoped, reducing the chances of bugs related to variable hoisting."
+        "content": "Using 'const' and 'let' helps avoid common pitfalls associated with variable scoping in JavaScript. 'const' is used for variables that should not be reassigned, providing more predictable and maintainable code. 'let' is used for variables that can change, but it is block-scoped, reducing the chances of bugs related to variable hoisting. For more information, refer to the [MDN Web Docs on const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) and [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)."
     },
     {
         "summary": "Sanitize User Input",
-        "content": "Always sanitize user input to prevent security vulnerabilities such as cross-site scripting (XSS) and command injection. Use libraries like DOMPurify for sanitizing HTML content, and ensure that any data coming from user input is properly validated and sanitized before being processed or displayed."
+        "content": "Always sanitize user input to prevent security vulnerabilities such as cross-site scripting (XSS) and command injection. Use libraries like [DOMPurify](https://github.com/cure53/DOMPurify) for sanitizing HTML content, and ensure that any data coming from user input is properly validated and sanitized before being processed or displayed. Learn more about XSS prevention on the [OWASP XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Prevention_Cheat_Sheet.html)."
     },
     {
         "summary": "Use Promises and Async/Await for Asynchronous Code",
-        "content": "Promises and async/await provide a cleaner and more readable way to handle asynchronous operations compared to traditional callback functions. They help in writing more maintainable code and reduce the complexity associated with error handling in asynchronous operations."
+        "content": "Promises and async/await provide a cleaner and more readable way to handle asynchronous operations compared to traditional callback functions. They help in writing more maintainable code and reduce the complexity associated with error handling in asynchronous operations. Learn more about [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and [async/await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await) on MDN Web Docs."
     },
     {
         "summary": "Avoid Global Variables",
-        "content": "Global variables can lead to conflicts and hard-to-debug issues, especially in larger codebases. Encapsulate your code within functions or use module patterns to avoid polluting the global namespace. This practice helps in maintaining code modularity and reusability."
+        "content": "Global variables can lead to conflicts and hard-to-debug issues, especially in larger codebases. Encapsulate your code within functions or use module patterns to avoid polluting the global namespace. This practice helps in maintaining code modularity and reusability. Read more about best practices in the [MDN Web Docs on Variable Scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope)."
     },
     {
         "summary": "Optimize DOM Manipulation",
-        "content": "Frequent DOM manipulation can lead to performance issues. To optimize, batch DOM changes, use document fragments, or leverage virtual DOM libraries like React. Minimizing reflows and repaints by reducing direct DOM interactions can significantly improve performance."
+        "content": "Frequent DOM manipulation can lead to performance issues. To optimize, batch DOM changes, use document fragments, or leverage virtual DOM libraries like [React](https://reactjs.org/). Minimizing reflows and repaints by reducing direct DOM interactions can significantly improve performance. Check out this [article on DOM manipulation performance](https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/)."
     },
     {
         "summary": "Debounce and Throttle Events",
-        "content": "For events that fire frequently (like scroll, resize, or keypress), use debounce or throttle techniques to limit the number of times the event handler executes. This helps in improving performance and preventing excessive function calls. Libraries like Lodash provide convenient debounce and throttle methods."
+        "content": "For events that fire frequently (like scroll, resize, or keypress), use debounce or throttle techniques to limit the number of times the event handler executes. This helps in improving performance and preventing excessive function calls. Libraries like [Lodash](https://lodash.com/docs/4.17.15#debounce) provide convenient debounce and throttle methods. Read more about [debouncing and throttling](https://css-tricks.com/debouncing-throttling-explained-examples/) on CSS-Tricks."
     },
     {
         "summary": "Use Strict Mode",
-        "content": "Enable strict mode by adding 'use strict'; at the beginning of your JavaScript files or functions. Strict mode helps in catching common coding errors, prevents the use of certain problematic features, and provides better performance by allowing JavaScript engines to optimize code more effectively."
+        "content": "Enable strict mode by adding 'use strict'; at the beginning of your JavaScript files or functions. Strict mode helps in catching common coding errors, prevents the use of certain problematic features, and provides better performance by allowing JavaScript engines to optimize code more effectively. Learn more about strict mode on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)."
     },
     {
         "summary": "Leverage Browser DevTools",
-        "content": "Browser DevTools are powerful tools for debugging, profiling, and optimizing your code. Use features like breakpoints, network analysis, and performance profiling to identify and fix issues more efficiently. Familiarizing yourself with DevTools can greatly enhance your development workflow."
+        "content": "Browser DevTools are powerful tools for debugging, profiling, and optimizing your code. Use features like breakpoints, network analysis, and performance profiling to identify and fix issues more efficiently. Familiarizing yourself with DevTools can greatly enhance your development workflow. Learn more from the [Chrome DevTools documentation](https://developer.chrome.com/docs/devtools/)."
     },
     {
         "summary": "Use ES6 Modules",
-        "content": "ES6 modules provide a standardized way to organize and reuse code. They help in maintaining a clean codebase by encapsulating functionality and promoting code reuse. Use 'import' and 'export' statements to manage dependencies and module loading in your JavaScript projects."
+        "content": "ES6 modules provide a standardized way to organize and reuse code. They help in maintaining a clean codebase by encapsulating functionality and promoting code reuse. Use 'import' and 'export' statements to manage dependencies and module loading in your JavaScript projects. Read more about ES6 modules on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)."
     },
     {
         "summary": "Handle Errors Gracefully",
-        "content": "Always include error handling in your code to manage potential issues gracefully. Use try/catch blocks for synchronous code and .catch() or async/await with try/catch for asynchronous code. Proper error handling ensures your application can recover from unexpected situations and provide meaningful feedback to users."
+        "content": "Always include error handling in your code to manage potential issues gracefully. Use try/catch blocks for synchronous code and .catch() or async/await with try/catch for asynchronous code. Proper error handling ensures your application can recover from unexpected situations and provide meaningful feedback to users. Learn more about error handling in JavaScript on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#exception_handling_statements)."
     }
 ]
