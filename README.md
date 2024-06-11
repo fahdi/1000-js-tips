@@ -759,3 +759,93 @@ Custom errors can provide more meaningful error messages and debugging informati
 <details><summary>200. Use ES6 Modules for Better Code Organization</summary>
 ES6 modules allow you to import and export functions, objects, and primitives from one module to another, promoting better code organization and reuse. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
 </details>
+
+<details><summary>201. Use `Array.from()` to Convert Iterables</summary>
+`Array.from()` creates a new array from an iterable or array-like object. It's useful for converting NodeLists or other iterables to arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
+</details>
+
+<details><summary>202. Display Data with `console.table()`</summary>
+`console.table()` displays tabular data in the console, making it easier to read and debug objects and arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Console/table).
+</details>
+
+<details><summary>203. Effortlessly Empty an Array</summary>
+You can clear an array by setting its length to 0. This is a quick and efficient way to remove all elements. For example:
+```javascript
+let numbers = [1, 2, 3, 4];
+numbers.length = 0;
+console.log(numbers); // []
+```
+</details>
+
+<details><summary>204. Use `JSON.parse()` for JSON Strings</summary>
+`JSON.parse()` converts a JSON string into a JavaScript object, facilitating seamless data manipulation. For example:
+```javascript
+const jsonStr = '{"name": "John", "age": 25}';
+const person = JSON.parse(jsonStr);
+console.log(person); // {name: 'John', age: 25}
+```
+</details>
+
+<details><summary>205. Remove Array Duplicates Using `Set`</summary>
+Use `Set` to remove duplicates from an array. For example:
+```javascript
+const arrWithDuplicates = [1, 12, 2, 13, 4, 4, 13];
+const arrWithoutDuplicates = [...new Set(arrWithDuplicates)];
+console.log(arrWithoutDuplicates); // [1, 12, 2, 13, 4]
+```
+</details>
+
+<details><summary>206. Swap Values Using Destructuring</summary>
+Destructuring allows you to swap values between variables efficiently. For example:
+```javascript
+let x = 7, y = 13;
+[x, y] = [y, x];
+console.log(x); // 13
+console.log(y); // 7
+```
+</details>
+
+<details><summary>207. Use `Object.seal()` to Prevent Property Additions or Removals</summary>
+`Object.seal()` prevents adding or removing properties from an object but allows modification of existing properties. For example:
+```javascript
+const person = { name: 'John', age: 25 };
+Object.seal(person);
+person.age = 26; // Allowed
+person.profession = 'Programmer'; // Ignored
+console.log(person); // {name: 'John', age: 26}
+```
+</details>
+
+<details><summary>208. Use `Object.freeze()` to Prevent Object Modifications</summary>
+`Object.freeze()` prevents any changes to an object, including adding, modifying, or deleting properties. For example:
+```javascript
+const person = { name: 'John', age: 25 };
+Object.freeze(person);
+person.age = 26; // Ignored
+console.log(person); // {name: 'John', age: 25}
+```
+</details>
+
+<details><summary>209. Set Default Values with Logical OR Operator</summary>
+Use the logical OR operator to set default values. For example:
+```javascript
+function greet(name) {
+  name = name || 'Person';
+  console.log(`Hello, ${name}!`);
+}
+greet(); // Hello, Person!
+greet('John'); // Hello, John!
+```
+</details>
+
+<details><summary>210. Use `Intl.DateTimeFormat` for Date Formatting</summary>
+`Intl.DateTimeFormat` enables language-sensitive date and time formatting. This is useful for creating user-friendly dates in web applications. For example:
+```javascript
+const date = new Date();
+const formatter = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric'
+});
+console.log(formatter.format(date)); // Example: June 11, 2024
+```
+Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat).
+</details>

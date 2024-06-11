@@ -758,5 +758,45 @@
     {
         "summary": "Use ES6 Modules for Better Code Organization",
         "content": "ES6 modules allow you to import and export functions, objects, and primitives from one module to another, promoting better code organization and reuse. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use `Array.from()` to Convert Iterables",
+        "content": "`Array.from()` creates a new array from an iterable or array-like object. It's useful for converting NodeLists or other iterables to arrays. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Display Data with `console.table()`",
+        "content": "`console.table()` displays tabular data in the console, making it easier to read and debug objects and arrays. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Console/table\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Effortlessly Empty an Array",
+        "content": "You can clear an array by setting its length to 0. This is a quick and efficient way to remove all elements. For example:\n```javascript\nlet numbers = [1, 2, 3, 4];\nnumbers.length = 0;\nconsole.log(numbers); // []\n```"
+    },
+    {
+        "summary": "Use `JSON.parse()` for JSON Strings",
+        "content": "`JSON.parse()` converts a JSON string into a JavaScript object, facilitating seamless data manipulation. For example:\n```javascript\nconst jsonStr = '{\"name\": \"John\", \"age\": 25}';\nconst person = JSON.parse(jsonStr);\nconsole.log(person); // {name: 'John', age: 25}\n```"
+    },
+    {
+        "summary": "Remove Array Duplicates Using `Set`",
+        "content": "Use `Set` to remove duplicates from an array. For example:\n```javascript\nconst arrWithDuplicates = [1, 12, 2, 13, 4, 4, 13];\nconst arrWithoutDuplicates = [...new Set(arrWithDuplicates)];\nconsole.log(arrWithoutDuplicates); // [1, 12, 2, 13, 4]\n```"
+    },
+    {
+        "summary": "Swap Values Using Destructuring",
+        "content": "Destructuring allows you to swap values between variables efficiently. For example:\n```javascript\nlet x = 7, y = 13;\n[x, y] = [y, x];\nconsole.log(x); // 13\nconsole.log(y); // 7\n```"
+    },
+    {
+        "summary": "Use `Object.seal()` to Prevent Property Additions or Removals",
+        "content": "`Object.seal()` prevents adding or removing properties from an object but allows modification of existing properties. For example:\n```javascript\nconst person = { name: 'John', age: 25 };\nObject.seal(person);\nperson.age = 26; // Allowed\nperson.profession = 'Programmer'; // Ignored\nconsole.log(person); // {name: 'John', age: 26}\n```"
+    },
+    {
+        "summary": "Use `Object.freeze()` to Prevent Object Modifications",
+        "content": "`Object.freeze()` prevents any changes to an object, including adding, modifying, or deleting properties. For example:\n```javascript\nconst person = { name: 'John', age: 25 };\nObject.freeze(person);\nperson.age = 26; // Ignored\nconsole.log(person); // {name: 'John', age: 25}\n```"
+    },
+    {
+        "summary": "Set Default Values with Logical OR Operator",
+        "content": "Use the logical OR operator to set default values. For example:\n```javascript\nfunction greet(name) {\n  name = name || 'Person';\n  console.log(`Hello, ${name}!`);\n}\ngreet(); // Hello, Person!\ngreet('John'); // Hello, John!\n```"
+    },
+    {
+        "summary": "Use `Intl.DateTimeFormat` for Date Formatting",
+        "content": "`Intl.DateTimeFormat` enables language-sensitive date and time formatting. This is useful for creating user-friendly dates in web applications. For example:\n```javascript\nconst date = new Date();\nconst formatter = new Intl.DateTimeFormat('en-US', {\n  year: 'numeric', month: 'long', day: 'numeric'\n});\nconsole.log(formatter.format(date)); // Example: June 11, 2024\n```\nLearn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat\">MDN Web Docs</a>."
     }
 ]
