@@ -639,3 +639,123 @@ The event loop is a fundamental concept in JavaScript's concurrency model. It al
 <details><summary>170. Use the Spread Operator</summary>
 The spread operator (...) allows you to expand iterable elements like arrays and objects. It is useful for combining arrays, cloning objects, and spreading elements in function calls. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
 </details>
+
+<details><summary>171. Understand the Difference Between `==` and `===`</summary>
+`==` checks for equality with type coercion, while `===` checks for equality without type coercion. Always use `===` to avoid unexpected type conversions. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness).
+</details>
+
+<details><summary>172. Use `Object.entries()` and `Object.values()`</summary>
+`Object.entries()` returns an array of a given object's own enumerable string-keyed property [key, value] pairs, while `Object.values()` returns an array of a given object's own enumerable property values. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values).
+</details>
+
+<details><summary>173. Use `Object.assign()` for Cloning Objects</summary>
+`Object.assign()` is used to copy the values of all enumerable own properties from one or more source objects to a target object. This is useful for shallow cloning. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
+</details>
+
+<details><summary>174. Use the `typeof` Operator</summary>
+The `typeof` operator returns a string indicating the type of the unevaluated operand. It's useful for type checking. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).
+</details>
+
+<details><summary>175. Understand Variable Shadowing</summary>
+Variable shadowing occurs when a variable declared within a certain scope has the same name as a variable declared in an outer scope. This can lead to unexpected behaviors. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
+</details>
+
+<details><summary>176. Use `Array.prototype.reduce` for Accumulation</summary>
+The `reduce` method executes a reducer function on each element of the array, resulting in a single output value. It's useful for summing numbers, flattening arrays, etc. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce).
+</details>
+
+<details><summary>177. Use `Array.prototype.filter` for Filtering Arrays</summary>
+The `filter` method creates a new array with all elements that pass the test implemented by the provided function. It's useful for creating subsets of arrays based on conditions. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+</details>
+
+<details><summary>178. Use Template Literals for Multi-line Strings</summary>
+Template literals allow for multi-line strings and string interpolation using backticks (\`). This improves readability and convenience. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+</details>
+
+<details><summary>179. Understand Hoisting with `var`</summary>
+Variables declared with `var` are hoisted to the top of their scope and initialized with `undefined`, which can lead to bugs. Use `let` and `const` to avoid these issues. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var).
+</details>
+
+<details><summary>180. Use `Promise.all` for Concurrent Promises</summary>
+`Promise.all` takes an iterable of promises and returns a single Promise that resolves when all of the promises have resolved. It's useful for running multiple asynchronous operations in parallel. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all).
+</details>
+
+<details><summary>181. Use `Promise.race` for First Settled Promise</summary>
+`Promise.race` returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects. This is useful for timing out asynchronous operations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race).
+</details>
+
+<details><summary>182. Use `Array.prototype.find` for Finding Elements</summary>
+The `find` method returns the first element in the array that satisfies the provided testing function. It's useful for finding a single element based on a condition. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find).
+</details>
+
+<details><summary>183. Use `Array.prototype.includes` for Checking Existence</summary>
+The `includes` method determines whether an array includes a certain value among its entries, returning true or false. It's useful for checking if an array contains a specific element. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes).
+</details>
+
+<details><summary>184. Use `String.prototype.includes` for Substring Search</summary>
+The `includes` method determines whether one string may be found within another string, returning true or false. It's useful for checking if a string contains a substring. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes).
+</details>
+
+<details><summary>185. Use `String.prototype.startsWith` and `endsWith`</summary>
+The `startsWith` and `endsWith` methods determine whether a string begins or ends with the characters of a specified string, respectively. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith).
+</details>
+
+<details><summary>186. Use `Array.from` to Create Arrays from Iterables</summary>
+`Array.from` creates a new, shallow-copied Array instance from an array-like or iterable object. It's useful for converting NodeLists to arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
+</details>
+
+<details><summary>187. Use `Object.keys`, `Object.values`, and `Object.entries`</summary>
+These methods are useful for converting an object's keys, values, or entries into arrays. They are helpful for iterating over properties. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys), [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values), and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries).
+</details>
+
+<details><summary>188. Use the `in` Operator for Property Checking</summary>
+The `in` operator returns true if the specified property is in the specified object or its prototype chain. It's useful for checking if an object has a property. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in).
+</details>
+
+<details><summary>189. Understand `instanceof` for Type Checking</summary>
+The `instanceof` operator tests whether the prototype property of a constructor appears anywhere in the prototype chain of an object. It's useful for checking the type of an object. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof).
+</details>
+
+<details><summary>190. Use `Function.prototype.bind` for Explicit `this` Binding</summary>
+The `bind` method creates a new function that, when called, has its `this` keyword set to the provided value. It's useful for ensuring `this` is correctly set. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
+</details>
+
+<details><summary>191. Use `Function.prototype.call` and `apply`</summary>
+The `call` and `apply` methods call a function with a given `this` value and arguments. `call` accepts an argument list, while `apply` accepts a single array of arguments. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply).
+</details>
+
+<details><summary>192. Use `document.createElement` for Dynamic Elements</summary>
+The `document.createElement` method creates an HTML element specified by tagName. It's useful for creating elements dynamically. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement).
+</details>
+
+<details><summary>193. Use `element.append`, `prepend`, `before`, and `after`</summary>
+These methods allow you to insert elements relative to an existing element, providing a more flexible way to manage the DOM. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element).
+</details>
+
+<details><summary>194. Use `element.innerHTML` vs `element.textContent`</summary>
+`innerHTML` sets or gets the HTML or XML markup contained within an element, while `textContent` sets or gets the text content. Use `textContent` to avoid security risks with user-generated content. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent).
+</details>
+
+<details><summary>195. Understand Event Capturing and Bubbling</summary>
+Event capturing and bubbling are phases in the event propagation process. Capturing occurs first, moving from the outermost element to the target element, followed by bubbling, which moves back up. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase).
+</details>
+
+<details><summary>196. Use `event.preventDefault` and `event.stopPropagation`</summary>
+`event.preventDefault` cancels the event if it is cancelable, preventing the default action. `event.stopPropagation` prevents further propagation of the current event in the capturing and bubbling phases. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+</details>
+
+<details><summary>197. Use `try...catch` for Error Handling</summary>
+The `try...catch` statement allows you to handle exceptions that occur in your code, improving error management and debugging. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch).
+</details>
+
+<details><summary>198. Use `finally` with `try...catch`</summary>
+The `finally` block contains statements to execute after the try and catch blocks, regardless of whether an exception was thrown or caught. It's useful for cleanup code. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#the_finally_block).
+</details>
+
+<details><summary>199. Use Custom Errors for Better Debugging</summary>
+Custom errors can provide more meaningful error messages and debugging information. Create a custom error by extending the built-in Error class. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Custom_Error_Types).
+</details>
+
+<details><summary>200. Use ES6 Modules for Better Code Organization</summary>
+ES6 modules allow you to import and export functions, objects, and primitives from one module to another, promoting better code organization and reuse. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+</details>
