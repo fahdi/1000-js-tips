@@ -599,3 +599,43 @@ The Shadow DOM allows you to encapsulate your component's internal structure, en
 <details><summary>150. Use the File System Access API</summary>
 The File System Access API provides methods to read and write files on the user's local file system, useful for web applications that need to handle local files. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API).
 </details>
+
+<details><summary>161. Understand Scope and Closures</summary>
+JavaScript has function scope and block scope (introduced with ES6). Closures are functions that remember the scope in which they were created. Understanding these concepts is crucial for managing variables and creating private data. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
+</details>
+
+<details><summary>162. Use Arrow Functions</summary>
+Arrow functions provide a concise syntax and do not have their own `this`, `arguments`, `super`, or `new.target`. This makes them useful in many contexts where a regular function would create issues with `this` binding. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+</details>
+
+<details><summary>163. Understand `this` Keyword</summary>
+The `this` keyword refers to the object it belongs to. Its value depends on how the function is called. Arrow functions do not have their own `this` context, making them useful for callbacks. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this).
+</details>
+
+<details><summary>164. Use Default Parameters</summary>
+Default parameters allow you to set default values for function parameters, improving code readability and reducing the need for checks within the function body. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
+</details>
+
+<details><summary>165. Destructure Objects and Arrays</summary>
+Destructuring allows you to unpack values from arrays or properties from objects into distinct variables, making code more readable and concise. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
+</details>
+
+<details><summary>166. Use Template Literals</summary>
+Template literals provide an easy way to create multiline strings and include expressions within strings using `${}` syntax. This improves readability and manageability of strings in your code. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+</details>
+
+<details><summary>167. Understand Promises</summary>
+Promises provide a way to handle asynchronous operations in JavaScript, offering a more manageable way to handle success and error cases. They form the basis for async/await syntax. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+</details>
+
+<details><summary>168. Use Async/Await</summary>
+Async/await syntax allows you to write asynchronous code that looks synchronous, making it easier to read and maintain. It builds on top of promises. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
+</details>
+
+<details><summary>169. Understand the Event Loop</summary>
+The event loop is a fundamental concept in JavaScript's concurrency model. It allows JavaScript to perform non-blocking operations by offloading operations to the system kernel. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop).
+</details>
+
+<details><summary>170. Use the Spread Operator</summary>
+The spread operator (...) allows you to expand iterable elements like arrays and objects. It is useful for combining arrays, cloning objects, and spreading elements in function calls. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+</details>

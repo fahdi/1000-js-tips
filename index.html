@@ -44,6 +44,15 @@
             margin-bottom: 20px;
             white-space: pre-wrap; /* To handle preformatted text like code snippets */
         }
+        .permalink {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .permalink:hover {
+            text-decoration: underline;
+        }
         footer {
             margin-top: 30px;
             font-size: 0.9em;
@@ -74,32 +83,49 @@
         }
     </style>
     <script>
-      // Function to fetch the tips and display a random one
-      async function displayRandomTip() {
-        try {
-          const response = await fetch('tips.json');
-          const tips = await response.json();
-          const randomTip = tips[Math.floor(Math.random() * tips.length)];
-          document.getElementById('tip-summary').innerText = randomTip.summary;
-          document.getElementById('tip-content').innerHTML = randomTip.content.replace(/\n/g, '<br>');
-        } catch (error) {
-          console.error('Error fetching tips:', error);
+        let tips = [];
+
+        // Function to fetch the tips and display a random one
+        async function fetchTips() {
+            try {
+                const response = await fetch('tips.json');
+                tips = await response.json();
+                const urlParams = new URLSearchParams(window.location.search);
+                const tipIndex = urlParams.get('tip');
+                displayTip(tipIndex);
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
         }
-      }
 
-      // Fetch and display a random tip when the page loads
-      window.onload = displayRandomTip;
+        // Function to display a specific or random tip
+        function displayTip(tipIndex = null) {
+            let tip;
+            if (tipIndex !== null && tips[tipIndex]) {
+                tip = tips[tipIndex];
+            } else {
+                tipIndex = Math.floor(Math.random() * tips.length);
+                tip = tips[tipIndex];
+            }
+            document.getElementById('tip-summary').innerText = tip.summary;
+            document.getElementById('tip-content').innerHTML = tip.content.replace(/\n/g, '<br>');
+            document.getElementById('permalink').href = `?tip=${tipIndex}`;
+        }
 
-      // Function to refresh the tip
-      function refreshTip() {
-        displayRandomTip();
-      }
+        // Fetch and display a tip when the page loads
+        window.onload = fetchTips;
+
+        // Function to refresh the tip
+        function refreshTip() {
+            displayTip();
+        }
     </script>
 </head>
 <body>
 <div class="container">
     <h1>JavaScript Tip of the Day</h1>
     <h2 id="tip-summary"></h2>
+    <a id="permalink" class="permalink" href="#">🔗</a>
     <p id="tip-content"></p>
     <button class="refresh-button" onclick="refreshTip()">Show Another Tip</button>
     <footer>&copy; 2024 JavaScript Tips. All rights reserved.</footer>

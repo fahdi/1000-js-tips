@@ -598,5 +598,45 @@
     {
         "summary": "Use the File System Access API",
         "content": "The File System Access API provides methods to read and write files on the user's local file system, useful for web applications that need to handle local files. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Understand Scope and Closures",
+        "content": "JavaScript has function scope and block scope (introduced with ES6). Closures are functions that remember the scope in which they were created. Understanding these concepts is crucial for managing variables and creating private data. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Arrow Functions",
+        "content": "Arrow functions provide a concise syntax and do not have their own `this`, `arguments`, `super`, or `new.target`. This makes them useful in many contexts where a regular function would create issues with `this` binding. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Understand `this` Keyword",
+        "content": "The `this` keyword refers to the object it belongs to. Its value depends on how the function is called. Arrow functions do not have their own `this` context, making them useful for callbacks. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Default Parameters",
+        "content": "Default parameters allow you to set default values for function parameters, improving code readability and reducing the need for checks within the function body. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Destructure Objects and Arrays",
+        "content": "Destructuring allows you to unpack values from arrays or properties from objects into distinct variables, making code more readable and concise. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Template Literals",
+        "content": "Template literals provide an easy way to create multiline strings and include expressions within strings using `${}` syntax. This improves readability and manageability of strings in your code. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Understand Promises",
+        "content": "Promises provide a way to handle asynchronous operations in JavaScript, offering a more manageable way to handle success and error cases. They form the basis for async/await syntax. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use Async/Await",
+        "content": "Async/await syntax allows you to write asynchronous code that looks synchronous, making it easier to read and maintain. It builds on top of promises. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Understand the Event Loop",
+        "content": "The event loop is a fundamental concept in JavaScript's concurrency model. It allows JavaScript to perform non-blocking operations by offloading operations to the system kernel. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Use the Spread Operator",
+        "content": "The spread operator (...) allows you to expand iterable elements like arrays and objects. It is useful for combining arrays, cloning objects, and spreading elements in function calls. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax\">MDN Web Docs</a>."
     }
 ]
