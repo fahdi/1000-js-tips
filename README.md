@@ -41,7 +41,7 @@ Always include error handling in your code to manage potential issues gracefully
 </details>
 
 <details><summary>11. Use Template Literals</summary>
-Template literals provide an easy and readable way to create strings. They allow for embedded expressions and multiline strings, which can simplify string creation and manipulation. Use backticks (\`) to define template literals and include expressions within ${} brackets. Learn more about template literals on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+Template literals provide an easy and readable way to create strings. They allow for embedded expressions and multiline strings, which can simplify string creation and manipulation. Use backticks (`) to define template literals and include expressions within ${} brackets. Learn more about template literals on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 </details>
 
 <details><summary>12. Use the Spread Operator</summary>
@@ -368,64 +368,64 @@ The WebNFC API provides a way to read and write NFC tags directly from a web app
 The WebOTP API provides a way to handle one-time passwords in web applications. This can be useful for building applications that require user authentication. Learn more about the WebOTP API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API).
 </details>
 
-<details><summary>93. Use the WebUSB API</summary>
-The WebUSB API provides a way to connect to USB devices directly from a web application. This can be useful for building applications that need to interact with USB peripherals. Learn more about the WebUSB API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/USB).
+<details><summary>93. Use async/await for Promises</summary>
+Async/await syntax allows you to write asynchronous code that looks synchronous, improving readability and maintainability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
 </details>
 
-<details><summary>94. Use the Web Serial API</summary>
-The Web Serial API provides a way to connect to serial devices directly from a web application. This can be useful for building applications that need to interact with serial peripherals. Learn more about the Web Serial API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Serial).
+<details><summary>94. Use ES6 Classes</summary>
+ES6 classes provide a clear syntax for creating objects and dealing with inheritance in JavaScript. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).
 </details>
 
-<details><summary>95. Use the NFC API</summary>
-The Web NFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the NFC API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API).
+<details><summary>95. Use Array.prototype.flat for Flattening Arrays</summary>
+The `flat` method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. It's useful for handling nested arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat).
 </details>
 
-<details><summary>96. Use the Background Sync API</summary>
-The Background Sync API provides a way to defer actions until the user has a stable internet connection. This can be useful for building applications that need to handle intermittent connectivity. Learn more about the Background Sync API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Background_Sync_API).
+<details><summary>96. Use Object.freeze for Immutability</summary>
+`Object.freeze` prevents modifications to an object, making it immutable. This is useful for ensuring data integrity. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze).
 </details>
 
-<details><summary>97. Use the Badging API</summary>
-The Badging API provides a way to set an application-wide badge, typically shown on the app's icon. This can be useful for providing users with status or notification indicators. Learn more about the Badging API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Badging_API).
+<details><summary>97. Use Intl.DateTimeFormat for Date Formatting</summary>
+`Intl.DateTimeFormat` enables language-sensitive date and time formatting. This is useful for creating user-friendly dates in web applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat).
 </details>
 
-<details><summary>98. Use the Wake Lock API</summary>
-The Wake Lock API provides a way to prevent the device from dimming or locking the screen. This can be useful for applications that need to keep the screen on while in use. Learn more about the Wake Lock API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Wake_Lock_API).
+<details><summary>98. Use Array.prototype.some for Conditional Checks</summary>
+The `some` method tests whether at least one element in the array passes the implemented function. It's useful for conditionally checking array elements. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some).
 </details>
 
-<details><summary>99. Use the Web Share API</summary>
-The Web Share API provides a way to share text, links, and files to other apps installed on the device. This can be useful for building applications that need to share content with other apps. Learn more about the Web Share API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share).
+<details><summary>99. Use Array.prototype.every for Uniform Condition Checks</summary>
+The `every` method tests whether all elements in the array pass the implemented function. It's useful for ensuring all elements meet a condition. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every).
 </details>
 
-<details><summary>100. Use the Contact Picker API</summary>
-The Contact Picker API provides a way to select contacts from the user's address book. This can be useful for building applications that need to interact with the user's contacts. Learn more about the Contact Picker API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API).
+<details><summary>100. Use String.prototype.padStart and padEnd for Padding</summary>
+These methods pad the current string with another string until the resulting string reaches the given length. Useful for formatting output. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd).
 </details>
 
-<details><summary>101. Use the Sensor APIs</summary>
-The Sensor APIs provide a way to access various sensors on the device, such as the accelerometer, gyroscope, and magnetometer. This can be useful for building applications that need to interact with the device's sensors. Learn more about the Sensor APIs on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs).
+<details><summary>101. Use Array.prototype.flatMap for Mapping and Flattening</summary>
+The `flatMap` method maps each element using a mapping function, then flattens the result into a new array. It's a combination of `map` and `flat`. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap).
 </details>
 
-<details><summary>102. Use the Visual Viewport API</summary>
-The Visual Viewport API provides a way to access information about the visual viewport, including its size and position. This can be useful for building responsive web applications that adapt to different screen sizes. Learn more about the Visual Viewport API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API).
+<details><summary>102. Use Array.prototype.sort for Sorting Arrays</summary>
+The `sort` method sorts the elements of an array in place and returns the sorted array. It's useful for organizing data. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
 </details>
 
-<details><summary>103. Use the WebVR API</summary>
-The WebVR API provides a way to create virtual reality experiences in web applications. This can be useful for building immersive web applications that provide VR experiences. Learn more about the WebVR API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API).
+<details><summary>103. Use Promise.finally for Cleanup</summary>
+`Promise.finally` executes a callback when the promise is settled, regardless of its outcome. This is useful for cleanup operations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally).
 </details>
 
-<details><summary>104. Use the WebXR API</summary>
-The WebXR API provides a way to create augmented reality and virtual reality experiences in web applications. This can be useful for building immersive web applications that provide AR and VR experiences. Learn more about the WebXR API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API).
+<details><summary>104. Use WeakRef for Weak References</summary>
+`WeakRef` provides a way to hold a weak reference to an object without preventing it from being garbage-collected. This is useful for memory management. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef).
 </details>
 
-<details><summary>105. Use the Credential Management API</summary>
-The Credential Management API provides a way to handle user credentials, such as passwords and federated identities. This can be useful for building applications that require user authentication. Learn more about the Credential Management API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API).
+<details><summary>105. Use FinalizationRegistry for Cleanup</summary>
+`FinalizationRegistry` allows you to request a callback when an object is garbage-collected. This is useful for cleaning up resources. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry).
 </details>
 
-<details><summary>106. Use the Web Authentication API</summary>
-The Web Authentication API provides a way to use public key cryptography for user authentication. This can be useful for building applications that require strong user authentication. Learn more about the Web Authentication API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API).
+<details><summary>106. Use AbortController to Cancel Promises</summary>
+`AbortController` provides a way to abort web requests and other asynchronous tasks. This is useful for managing long-running tasks. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
 </details>
 
-<details><summary>107. Use the Encrypted Media Extensions API</summary>
-The Encrypted Media Extensions API provides a way to play encrypted media content in web applications. This can be useful for building applications that need to handle DRM-protected content. Learn more about the Encrypted Media Extensions API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API).
+<details><summary>107. Use navigator.clipboard for Clipboard Access</summary>
+`navigator.clipboard` provides a way to read from and write to the clipboard. This is useful for creating rich text editors and other interactive applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard).
 </details>
 
 <details><summary>108. Use the Media Source Extensions API</summary>

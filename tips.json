@@ -41,7 +41,7 @@
     },
     {
         "summary": "Use Template Literals",
-        "content": "Template literals provide an easy and readable way to create strings. They allow for embedded expressions and multiline strings, which can simplify string creation and manipulation. Use backticks (\\`) to define template literals and include expressions within ${} brackets. Learn more about template literals on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\">MDN Web Docs</a>."
+        "content": "Template literals provide an easy and readable way to create strings. They allow for embedded expressions and multiline strings, which can simplify string creation and manipulation. Use backticks (`) to define template literals and include expressions within ${} brackets. Learn more about template literals on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\">MDN Web Docs</a>."
     },
     {
         "summary": "Use the Spread Operator",
@@ -368,64 +368,64 @@
         "content": "The WebOTP API provides a way to handle one-time passwords in web applications. This can be useful for building applications that require user authentication. Learn more about the WebOTP API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the WebUSB API",
-        "content": "The WebUSB API provides a way to connect to USB devices directly from a web application. This can be useful for building applications that need to interact with USB peripherals. Learn more about the WebUSB API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/USB\">MDN Web Docs</a>."
+        "summary": "Use async/await for Promises",
+        "content": "Async/await syntax allows you to write asynchronous code that looks synchronous, improving readability and maintainability. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Web Serial API",
-        "content": "The Web Serial API provides a way to connect to serial devices directly from a web application. This can be useful for building applications that need to interact with serial peripherals. Learn more about the Web Serial API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Serial\">MDN Web Docs</a>."
+        "summary": "Use ES6 Classes",
+        "content": "ES6 classes provide a clear syntax for creating objects and dealing with inheritance in JavaScript. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the NFC API",
-        "content": "The Web NFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the NFC API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API\">MDN Web Docs</a>."
+        "summary": "Use Array.prototype.flat for Flattening Arrays",
+        "content": "The `flat` method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. It's useful for handling nested arrays. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Background Sync API",
-        "content": "The Background Sync API provides a way to defer actions until the user has a stable internet connection. This can be useful for building applications that need to handle intermittent connectivity. Learn more about the Background Sync API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Background_Sync_API\">MDN Web Docs</a>."
+        "summary": "Use Object.freeze for Immutability",
+        "content": "`Object.freeze` prevents modifications to an object, making it immutable. This is useful for ensuring data integrity. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Badging API",
-        "content": "The Badging API provides a way to set an application-wide badge, typically shown on the app's icon. This can be useful for providing users with status or notification indicators. Learn more about the Badging API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Badging_API\">MDN Web Docs</a>."
+        "summary": "Use Intl.DateTimeFormat for Date Formatting",
+        "content": "`Intl.DateTimeFormat` enables language-sensitive date and time formatting. This is useful for creating user-friendly dates in web applications. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Wake Lock API",
-        "content": "The Wake Lock API provides a way to prevent the device from dimming or locking the screen. This can be useful for applications that need to keep the screen on while in use. Learn more about the Wake Lock API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Wake_Lock_API\">MDN Web Docs</a>."
+        "summary": "Use Array.prototype.some for Conditional Checks",
+        "content": "The `some` method tests whether at least one element in the array passes the implemented function. It's useful for conditionally checking array elements. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Web Share API",
-        "content": "The Web Share API provides a way to share text, links, and files to other apps installed on the device. This can be useful for building applications that need to share content with other apps. Learn more about the Web Share API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share\">MDN Web Docs</a>."
+        "summary": "Use Array.prototype.every for Uniform Condition Checks",
+        "content": "The `every` method tests whether all elements in the array pass the implemented function. It's useful for ensuring all elements meet a condition. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Contact Picker API",
-        "content": "The Contact Picker API provides a way to select contacts from the user's address book. This can be useful for building applications that need to interact with the user's contacts. Learn more about the Contact Picker API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API\">MDN Web Docs</a>."
+        "summary": "Use String.prototype.padStart and padEnd for Padding",
+        "content": "These methods pad the current string with another string until the resulting string reaches the given length. Useful for formatting output. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart\">MDN Web Docs</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Sensor APIs",
-        "content": "The Sensor APIs provide a way to access various sensors on the device, such as the accelerometer, gyroscope, and magnetometer. This can be useful for building applications that need to interact with the device's sensors. Learn more about the Sensor APIs on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs\">MDN Web Docs</a>."
+        "summary": "Use Array.prototype.flatMap for Mapping and Flattening",
+        "content": "The `flatMap` method maps each element using a mapping function, then flattens the result into a new array. It's a combination of `map` and `flat`. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Visual Viewport API",
-        "content": "The Visual Viewport API provides a way to access information about the visual viewport, including its size and position. This can be useful for building responsive web applications that adapt to different screen sizes. Learn more about the Visual Viewport API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API\">MDN Web Docs</a>."
+        "summary": "Use Array.prototype.sort for Sorting Arrays",
+        "content": "The `sort` method sorts the elements of an array in place and returns the sorted array. It's useful for organizing data. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the WebVR API",
-        "content": "The WebVR API provides a way to create virtual reality experiences in web applications. This can be useful for building immersive web applications that provide VR experiences. Learn more about the WebVR API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API\">MDN Web Docs</a>."
+        "summary": "Use Promise.finally for Cleanup",
+        "content": "`Promise.finally` executes a callback when the promise is settled, regardless of its outcome. This is useful for cleanup operations. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the WebXR API",
-        "content": "The WebXR API provides a way to create augmented reality and virtual reality experiences in web applications. This can be useful for building immersive web applications that provide AR and VR experiences. Learn more about the WebXR API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API\">MDN Web Docs</a>."
+        "summary": "Use WeakRef for Weak References",
+        "content": "`WeakRef` provides a way to hold a weak reference to an object without preventing it from being garbage-collected. This is useful for memory management. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Credential Management API",
-        "content": "The Credential Management API provides a way to handle user credentials, such as passwords and federated identities. This can be useful for building applications that require user authentication. Learn more about the Credential Management API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API\">MDN Web Docs</a>."
+        "summary": "Use FinalizationRegistry for Cleanup",
+        "content": "`FinalizationRegistry` allows you to request a callback when an object is garbage-collected. This is useful for cleaning up resources. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Web Authentication API",
-        "content": "The Web Authentication API provides a way to use public key cryptography for user authentication. This can be useful for building applications that require strong user authentication. Learn more about the Web Authentication API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API\">MDN Web Docs</a>."
+        "summary": "Use AbortController to Cancel Promises",
+        "content": "`AbortController` provides a way to abort web requests and other asynchronous tasks. This is useful for managing long-running tasks. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/AbortController\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use the Encrypted Media Extensions API",
-        "content": "The Encrypted Media Extensions API provides a way to play encrypted media content in web applications. This can be useful for building applications that need to handle DRM-protected content. Learn more about the Encrypted Media Extensions API on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API\">MDN Web Docs</a>."
+        "summary": "Use navigator.clipboard for Clipboard Access",
+        "content": "`navigator.clipboard` provides a way to read from and write to the clipboard. This is useful for creating rich text editors and other interactive applications. Learn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Clipboard\">MDN Web Docs</a>."
     },
     {
         "summary": "Use the Media Source Extensions API",
