@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Tip of the Day</title>
+    <title>JavaScript Tips</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,20 +13,35 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
             text-align: center;
-            overflow: hidden;
+            min-height: 100vh;
         }
         .container {
             background: #fff;
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            margin: 0 20px;
-            animation: fadeIn 1.5s ease-in-out;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px;
+        }
+        .menu {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .menu a:hover {
+            text-decoration: underline;
         }
         h1 {
             font-size: 2.5em;
@@ -42,13 +57,33 @@
             font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
-            white-space: pre-wrap; /* To handle preformatted text like code snippets */
+            white-space: pre-wrap;
+        }
+        .tip {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .tip-summary {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tip-content {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
         .permalink {
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 0.9em;
             color: #007BFF;
             text-decoration: none;
+            display: block;
+            text-align: right;
         }
         .permalink:hover {
             text-decoration: underline;
@@ -57,79 +92,116 @@
             margin-top: 30px;
             font-size: 0.9em;
             color: #888;
+            text-align: center;
         }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .refresh-button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .refresh-button:hover {
-            background-color: #0056b3;
+        #loading {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
         }
     </style>
     <script>
-        let tips = [];
+      let tips = [];
+      let currentIndex = 0;
+      const batchSize = 10;
 
-        // Function to fetch the tips and display a random one
-        async function fetchTips() {
-            try {
-                const response = await fetch('tips.json');
-                tips = await response.json();
-                const urlParams = new URLSearchParams(window.location.search);
-                const tipIndex = urlParams.get('tip');
-                displayTip(tipIndex);
-            } catch (error) {
-                console.error('Error fetching tips:', error);
+      async function fetchTips() {
+        try {
+          const response = await fetch('tips.json'); // Replace with the correct URL of your tips.json file
+          tips = await response.json();
+          showRandomTip();
+        } catch (error) {
+          console.error('Error fetching tips:', error);
+        }
+      }
+
+      function displayTip(tipIndex = null) {
+        let tip;
+        if (tipIndex !== null && tips[tipIndex]) {
+          tip = tips[tipIndex];
+        } else {
+          tipIndex = Math.floor(Math.random() * tips.length);
+          tip = tips[tipIndex];
+        }
+        const container = document.getElementById('tips-container');
+        container.innerHTML = ''; // Clear existing tips
+        const tipElement = document.createElement('div');
+        tipElement.classList.add('tip');
+        tipElement.innerHTML = `
+                <h2 id="tip-summary">${tip.summary}</h2>
+                <p id="tip-content">${tip.content.replace(/\n/g, '<br>')}</p>
+                <a id="permalink" class="permalink" href="?tip=${tipIndex}">🔗 Permalink</a>
+            `;
+        container.appendChild(tipElement);
+      }
+
+      function loadMoreTips() {
+        const container = document.getElementById('tips-container');
+        const end = Math.min(currentIndex + batchSize, tips.length);
+        for (let i = currentIndex; i < end; i++) {
+          const tip = tips[i];
+          const tipElement = document.createElement('div');
+          tipElement.classList.add('tip');
+          tipElement.innerHTML = `
+                    <div class="tip-summary">${i + 1}. ${tip.summary}</div>
+                    <div class="tip-content">${tip.content}</div>
+                    <a class="permalink" href="?tip=${i}">🔗 Permalink</a>
+                `;
+          container.appendChild(tipElement);
+        }
+        currentIndex = end;
+        if (currentIndex < tips.length) {
+          observeLastTip();
+        } else {
+          document.getElementById('loading').style.display = 'none';
+        }
+      }
+
+      function observeLastTip() {
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 1.0
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              observer.disconnect();
+              loadMoreTips();
             }
+          });
+        }, options);
+        const lastTip = document.querySelector('.tip:last-child');
+        if (lastTip) {
+          observer.observe(lastTip);
         }
+      }
 
-        // Function to display a specific or random tip
-        function displayTip(tipIndex = null) {
-            let tip;
-            if (tipIndex !== null && tips[tipIndex]) {
-                tip = tips[tipIndex];
-            } else {
-                tipIndex = Math.floor(Math.random() * tips.length);
-                tip = tips[tipIndex];
-            }
-            document.getElementById('tip-summary').innerText = tip.summary;
-            document.getElementById('tip-content').innerHTML = tip.content.replace(/\n/g, '<br>');
-            document.getElementById('permalink').href = `?tip=${tipIndex}`;
-        }
+      function showRandomTip() {
+        const randomIndex = Math.floor(Math.random() * tips.length);
+        displayTip(randomIndex);
+        document.getElementById('loading').style.display = 'none';
+      }
 
-        // Fetch and display a tip when the page loads
-        window.onload = fetchTips;
+      function showAllTips() {
+        currentIndex = 0; // Reset the index
+        loadMoreTips();
+      }
 
-        // Function to refresh the tip
-        function refreshTip() {
-            displayTip();
-        }
+      window.onload = fetchTips;
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </head>
 <body>
 <a class="github-fork-ribbon" href="https://github.com/fahdi/1000-js-tips" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 <div class="container">
-    <h1>JavaScript Tip of the Day</h1>
-    <h2 id="tip-summary"></h2>
-    <a id="permalink" class="permalink" href="#">🔗</a>
-    <p id="tip-content"></p>
-    <button class="refresh-button" onclick="refreshTip()">Show Another Tip</button>
+    <div class="menu">
+        <a href="javascript:void(0);" onclick="showRandomTip()">Random Tip</a>
+        <a href="javascript:void(0);" onclick="showAllTips()">List All</a>
+    </div>
+    <h1>JavaScript Tips</h1>
+    <div id="tips-container"></div>
+    <div id="loading">Loading more tips...</div>
     <footer>&copy; 2024 JavaScript Tips. All rights reserved.</footer>
 </div>
 </body>
