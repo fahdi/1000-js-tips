@@ -109,7 +109,13 @@
         try {
           const response = await fetch('tips.json'); // Replace with the correct URL of your tips.json file
           tips = await response.json();
-          showRandomTip();
+          const urlParams = new URLSearchParams(window.location.search);
+          const tipIndex = urlParams.get('tip');
+          if (tipIndex !== null) {
+            displayTip(tipIndex);
+          } else {
+            showRandomTip();
+          }
         } catch (error) {
           console.error('Error fetching tips:', error);
         }
@@ -180,11 +186,12 @@
       function showRandomTip() {
         const randomIndex = Math.floor(Math.random() * tips.length);
         displayTip(randomIndex);
-        document.getElementById('loading').style.display = 'none';
       }
 
       function showAllTips() {
         currentIndex = 0; // Reset the index
+        const container = document.getElementById('tips-container');
+        container.innerHTML = ''; // Clear existing tips
         loadMoreTips();
       }
 
