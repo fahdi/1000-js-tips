@@ -72,8 +72,8 @@
         "content": "Async iterators and the for await...of loop allow you to iterate over asynchronous data sources in a clean and readable manner. This can simplify the handling of asynchronous streams of data. Learn more about async iterators on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of\">MDN Web Docs</a>."
     },
     {
-        "summary": "Use Optional Chaining",
-        "content": "Optional chaining (?.) allows you to safely access deeply nested properties without having to explicitly check for the existence of each level in the property chain. This can simplify your code and prevent runtime errors. Learn more about optional chaining on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining\">MDN Web Docs</a>."
+        "summary": "Use Optional Chaining for Safe Property Access",
+        "content": "Optional chaining (?.) allows you to safely access nested object properties without causing an error if a property is undefined or null. This can greatly simplify your code and reduce the need for multiple if checks. For example: `const value = obj?.prop1?.prop2;`. If any part of the chain is null or undefined, the expression short-circuits and returns undefined instead of throwing an error. Learn more about optional chaining on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining\">MDN Web Docs</a>."
     },
     {
         "summary": "Use Nullish Coalescing",
