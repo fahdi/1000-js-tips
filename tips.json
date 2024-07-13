@@ -798,5 +798,9 @@
     {
         "summary": "Use `Intl.DateTimeFormat` for Date Formatting",
         "content": "`Intl.DateTimeFormat` enables language-sensitive date and time formatting. This is useful for creating user-friendly dates in web applications. For example:\n```javascript\nconst date = new Date();\nconst formatter = new Intl.DateTimeFormat('en-US', {\n  year: 'numeric', month: 'long', day: 'numeric'\n});\nconsole.log(formatter.format(date)); // Example: June 11, 2024\n```\nLearn more on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat\">MDN Web Docs</a>."
+    },
+    {
+        "summary": "Leverage Dynamic Imports for Code Splitting",
+        "content": "Dynamic imports allow you to load JavaScript modules on demand, which can significantly improve your application's initial load time. Use the `import()` function to dynamically import modules. For example: `import('./module.js').then(module => { /* use the module */ });`. This technique is particularly useful for large applications where you want to load certain features only when they're needed. Learn more about dynamic imports on <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports\">MDN Web Docs</a>."
     }
 ]
