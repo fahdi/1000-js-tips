@@ -72,8 +72,8 @@ The for...of loop provides a simpler and more readable way to iterate over itera
 Async iterators and the for await...of loop allow you to iterate over asynchronous data sources in a clean and readable manner. This can simplify the handling of asynchronous streams of data. Learn more about async iterators on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of).
 </details>
 
-<details><summary>19. Use Optional Chaining</summary>
-Optional chaining (?.) allows you to safely access deeply nested properties without having to explicitly check for the existence of each level in the property chain. This can simplify your code and prevent runtime errors. Learn more about optional chaining on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
+<details><summary>19. Use Optional Chaining for Safe Property Access</summary>
+Optional chaining (?.) allows you to safely access nested object properties without causing an error if a property is undefined or null. This can greatly simplify your code and reduce the need for multiple if checks. For example: `const value = obj?.prop1?.prop2;`. If any part of the chain is null or undefined, the expression short-circuits and returns undefined instead of throwing an error. Learn more about optional chaining on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
 </details>
 
 <details><summary>20. Use Nullish Coalescing</summary>
@@ -428,347 +428,203 @@ The `sort` method sorts the elements of an array in place and returns the sorted
 `navigator.clipboard` provides a way to read from and write to the clipboard. This is useful for creating rich text editors and other interactive applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard).
 </details>
 
-<details><summary>108. Use the Media Source Extensions API</summary>
-The Media Source Extensions API provides a way to create streams for playback in web applications. This can be useful for building applications that need to handle adaptive streaming. Learn more about the Media Source Extensions API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API).
-</details>
-
-<details><summary>109. Use the WebCodecs API</summary>
-The WebCodecs API provides a way to encode and decode audio and video in web applications. This can be useful for building applications that need to handle media processing. Learn more about the WebCodecs API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API).
-</details>
-
-<details><summary>110. Use the WebGPU API</summary>
-The WebGPU API provides a way to use the GPU for rendering and computation in web applications. This can be useful for building applications that need to handle high-performance graphics and computations. Learn more about the WebGPU API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API).
-</details>
-
-<details><summary>111. Use the WebHID API</summary>
-The WebHID API provides a way to interact with human interface devices, such as keyboards and game controllers. This can be useful for building applications that need to handle input from HID devices. Learn more about the WebHID API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API).
-</details>
-
-<details><summary>112. Use the WebMIDI API</summary>
-The WebMIDI API provides a way to interact with MIDI devices, such as musical instruments. This can be useful for building applications that need to handle input from MIDI devices. Learn more about the WebMIDI API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess).
-</details>
-
-<details><summary>113. Use the WebNFC API</summary>
-The WebNFC API provides a way to read and write NFC tags directly from a web application. This can be useful for building applications that need to interact with NFC devices. Learn more about the WebNFC API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API).
-</details>
-
-<details><summary>114. Use the WebOTP API</summary>
-The WebOTP API provides a way to handle one-time passwords in web applications. This can be useful for building applications that require user authentication. Learn more about the WebOTP API on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API).
-</details>
-
-<details><summary>115. Use async/await for Promises</summary>
-Async/await syntax allows you to write asynchronous code that looks synchronous, improving readability and maintainability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
-</details>
-
-<details><summary>116. Use ES6 Classes</summary>
-ES6 classes provide a clear syntax for creating objects and dealing with inheritance in JavaScript. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).
-</details>
-
-<details><summary>117. Use Template Literals for Strings</summary>
+<details><summary>108. Use Template Literals for Strings</summary>
 Template literals allow for embedded expressions and multiline strings, making string manipulation easier. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 </details>
 
-<details><summary>118. Use Map and Set for Collections</summary>
+<details><summary>109. Use Map and Set for Collections</summary>
 Map and Set provide efficient ways to store and manage unique values and key-value pairs. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).
 </details>
 
-<details><summary>119. Use Object Destructuring</summary>
-Destructuring allows for extracting properties from objects and arrays into distinct variables, improving code readability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
-</details>
-
-<details><summary>120. Use Default Parameters in Functions</summary>
+<details><summary>110. Use Default Parameters in Functions</summary>
 Default parameters allow you to initialize function parameters with default values if no arguments are passed. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
 </details>
 
-<details><summary>121. Use Optional Chaining (?.)</summary>
+<details><summary>111. Use Optional Chaining (?.)</summary>
 Optional chaining simplifies accessing deeply nested properties without having to explicitly check for each level's existence. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
 </details>
 
-<details><summary>122. Use Nullish Coalescing (??)</summary>
+<details><summary>112. Use Nullish Coalescing (??)</summary>
 The nullish coalescing operator provides a way to handle default values when dealing with null or undefined, improving code clarity. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator).
 </details>
 
-<details><summary>123. Use Arrow Functions for Short Syntax</summary>
+<details><summary>113. Use Arrow Functions for Short Syntax</summary>
 Arrow functions provide a concise syntax for writing functions and lexically bind the `this` value. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 </details>
 
-<details><summary>124. Use Promises for Asynchronous Operations</summary>
+<details><summary>114. Use Promises for Asynchronous Operations</summary>
 Promises provide a cleaner way to handle asynchronous operations compared to callbacks, making your code more readable and maintainable. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 </details>
 
-<details><summary>125. Use the Fetch API for Network Requests</summary>
+<details><summary>115. Use the Fetch API for Network Requests</summary>
 The Fetch API is a modern replacement for XMLHttpRequest, providing a more powerful and flexible way to make HTTP requests. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 </details>
 
-<details><summary>126. Use the Intersection Observer API</summary>
+<details><summary>116. Use the Intersection Observer API</summary>
 The Intersection Observer API allows you to asynchronously observe changes in the intersection of a target element with an ancestor element or viewport. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
 </details>
 
-<details><summary>127. Use the Performance API</summary>
-The Performance API provides detailed timing data for the various stages of your page's loading, helping you optimize performance. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Performance).
-</details>
-
-<details><summary>128. Use Service Workers for Offline Support</summary>
+<details><summary>117. Use Service Workers for Offline Support</summary>
 Service workers enable you to create offline-first web applications by intercepting network requests and serving cached resources. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
 </details>
 
-<details><summary>129. Use WebSockets for Real-Time Communication</summary>
+<details><summary>118. Use WebSockets for Real-Time Communication</summary>
 WebSockets provide a way to open a persistent connection between the client and server for real-time communication. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
 </details>
 
-<details><summary>130. Use Local Storage and Session Storage</summary>
-Local storage and session storage provide ways to store data on the client side, persisting across sessions or page reloads. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
-</details>
-
-<details><summary>131. Use the Web Animations API</summary>
-The Web Animations API provides a way to create complex animations using JavaScript, offering more control and flexibility than CSS animations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API).
-</details>
-
-<details><summary>132. Use the Clipboard API</summary>
-The Clipboard API provides a way to interact with the clipboard, enabling you to copy and paste text programmatically. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
-</details>
-
-<details><summary>133. Use the Mutation Observer API</summary>
-The Mutation Observer API provides a way to observe changes to the DOM tree, useful for dynamic UI updates. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
-</details>
-
-<details><summary>134. Use the Resize Observer API</summary>
-The Resize Observer API provides a way to observe changes to the size of an element, useful for responsive design. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API).
-</details>
-
-<details><summary>135. Use the Broadcast Channel API</summary>
-The Broadcast Channel API provides a way to communicate between browsing contexts (tabs, iframes) that share the same origin. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API).
-</details>
-
-<details><summary>136. Use the File API</summary>
-The File API provides a way to interact with files on the user's device, useful for reading and writing files. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/File_API).
-</details>
-
-<details><summary>137. Use the Payment Request API</summary>
-The Payment Request API provides a way to simplify the process of collecting payment information from users, improving the user experience. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API).
-</details>
-
-<details><summary>138. Use the Notifications API</summary>
-The Notifications API enables web applications to display notifications to the user, even when the application is not in focus. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API).
-</details>
-
-<details><summary>139. Use the Vibration API</summary>
-The Vibration API allows web applications to provide haptic feedback by triggering device vibrations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API).
-</details>
-
-<details><summary>140. Use the Geolocation API</summary>
-The Geolocation API provides a way to get the geographical position of the device, useful for location-based services. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
-</details>
-
-<details><summary>141. Use the Battery Status API</summary>
-The Battery Status API provides information about the battery status of the device, helping optimize app behavior based on power availability. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API).
-</details>
-
-<details><summary>142. Use the Device Orientation API</summary>
-The Device Orientation API provides information about the physical orientation of the device, useful for building responsive applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Device_Orientation_API).
-</details>
-
-<details><summary>143. Use the Network Information API</summary>
-The Network Information API provides information about the network connection of the device, allowing apps to adjust behavior based on network conditions. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API).
-</details>
-
-<details><summary>144. Use the Gamepad API</summary>
-The Gamepad API provides a way to interact with game controllers, enabling the creation of web-based games with gamepad support. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API).
-</details>
-
-<details><summary>145. Use the WebRTC API</summary>
-The WebRTC API enables real-time communication capabilities in web applications, such as audio, video, and data sharing. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API).
-</details>
-
-<details><summary>146. Use the History API</summary>
-The History API provides methods to interact with the browser's history, useful for creating single-page applications with dynamic navigation. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/History_API).
-</details>
-
-<details><summary>147. Use the Web Audio API</summary>
-The Web Audio API provides advanced capabilities for audio processing and synthesis directly in the web browser, useful for building audio applications. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
-</details>
-
-<details><summary>148. Use the Web Animations API</summary>
-The Web Animations API allows for creating complex animations using JavaScript, offering greater control than CSS animations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API).
-</details>
-
-<details><summary>149. Use the Shadow DOM</summary>
-The Shadow DOM allows you to encapsulate your component's internal structure, ensuring styles and behavior are scoped to the component. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
-</details>
-
-<details><summary>150. Use the File System Access API</summary>
-The File System Access API provides methods to read and write files on the user's local file system, useful for web applications that need to handle local files. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API).
-</details>
-
-<details><summary>161. Understand Scope and Closures</summary>
+<details><summary>119. Understand Scope and Closures</summary>
 JavaScript has function scope and block scope (introduced with ES6). Closures are functions that remember the scope in which they were created. Understanding these concepts is crucial for managing variables and creating private data. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
 </details>
 
-<details><summary>162. Use Arrow Functions</summary>
-Arrow functions provide a concise syntax and do not have their own `this`, `arguments`, `super`, or `new.target`. This makes them useful in many contexts where a regular function would create issues with `this` binding. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
-</details>
-
-<details><summary>163. Understand `this` Keyword</summary>
+<details><summary>120. Understand `this` Keyword</summary>
 The `this` keyword refers to the object it belongs to. Its value depends on how the function is called. Arrow functions do not have their own `this` context, making them useful for callbacks. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this).
 </details>
 
-<details><summary>164. Use Default Parameters</summary>
-Default parameters allow you to set default values for function parameters, improving code readability and reducing the need for checks within the function body. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
-</details>
-
-<details><summary>165. Destructure Objects and Arrays</summary>
+<details><summary>121. Destructure Objects and Arrays</summary>
 Destructuring allows you to unpack values from arrays or properties from objects into distinct variables, making code more readable and concise. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
 </details>
 
-<details><summary>166. Use Template Literals</summary>
-Template literals provide an easy way to create multiline strings and include expressions within strings using `${}` syntax. This improves readability and manageability of strings in your code. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
-</details>
-
-<details><summary>167. Understand Promises</summary>
+<details><summary>122. Understand Promises</summary>
 Promises provide a way to handle asynchronous operations in JavaScript, offering a more manageable way to handle success and error cases. They form the basis for async/await syntax. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 </details>
 
-<details><summary>168. Use Async/Await</summary>
+<details><summary>123. Use Async/Await</summary>
 Async/await syntax allows you to write asynchronous code that looks synchronous, making it easier to read and maintain. It builds on top of promises. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
 </details>
 
-<details><summary>169. Understand the Event Loop</summary>
+<details><summary>124. Understand the Event Loop</summary>
 The event loop is a fundamental concept in JavaScript's concurrency model. It allows JavaScript to perform non-blocking operations by offloading operations to the system kernel. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop).
 </details>
 
-<details><summary>170. Use the Spread Operator</summary>
-The spread operator (...) allows you to expand iterable elements like arrays and objects. It is useful for combining arrays, cloning objects, and spreading elements in function calls. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
-</details>
-
-<details><summary>171. Understand the Difference Between `==` and `===`</summary>
+<details><summary>125. Understand the Difference Between `==` and `===`</summary>
 `==` checks for equality with type coercion, while `===` checks for equality without type coercion. Always use `===` to avoid unexpected type conversions. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness).
 </details>
 
-<details><summary>172. Use `Object.entries()` and `Object.values()`</summary>
+<details><summary>126. Use `Object.entries()` and `Object.values()`</summary>
 `Object.entries()` returns an array of a given object's own enumerable string-keyed property [key, value] pairs, while `Object.values()` returns an array of a given object's own enumerable property values. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values).
 </details>
 
-<details><summary>173. Use `Object.assign()` for Cloning Objects</summary>
+<details><summary>127. Use `Object.assign()` for Cloning Objects</summary>
 `Object.assign()` is used to copy the values of all enumerable own properties from one or more source objects to a target object. This is useful for shallow cloning. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
 </details>
 
-<details><summary>174. Use the `typeof` Operator</summary>
+<details><summary>128. Use the `typeof` Operator</summary>
 The `typeof` operator returns a string indicating the type of the unevaluated operand. It's useful for type checking. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).
 </details>
 
-<details><summary>175. Understand Variable Shadowing</summary>
+<details><summary>129. Understand Variable Shadowing</summary>
 Variable shadowing occurs when a variable declared within a certain scope has the same name as a variable declared in an outer scope. This can lead to unexpected behaviors. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
 </details>
 
-<details><summary>176. Use `Array.prototype.reduce` for Accumulation</summary>
+<details><summary>130. Use `Array.prototype.reduce` for Accumulation</summary>
 The `reduce` method executes a reducer function on each element of the array, resulting in a single output value. It's useful for summing numbers, flattening arrays, etc. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce).
 </details>
 
-<details><summary>177. Use `Array.prototype.filter` for Filtering Arrays</summary>
+<details><summary>131. Use `Array.prototype.filter` for Filtering Arrays</summary>
 The `filter` method creates a new array with all elements that pass the test implemented by the provided function. It's useful for creating subsets of arrays based on conditions. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
 </details>
 
-<details><summary>178. Use Template Literals for Multi-line Strings</summary>
+<details><summary>132. Use Template Literals for Multi-line Strings</summary>
 Template literals allow for multi-line strings and string interpolation using backticks (\`). This improves readability and convenience. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 </details>
 
-<details><summary>179. Understand Hoisting with `var`</summary>
+<details><summary>133. Understand Hoisting with `var`</summary>
 Variables declared with `var` are hoisted to the top of their scope and initialized with `undefined`, which can lead to bugs. Use `let` and `const` to avoid these issues. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var).
 </details>
 
-<details><summary>180. Use `Promise.all` for Concurrent Promises</summary>
+<details><summary>134. Use `Promise.all` for Concurrent Promises</summary>
 `Promise.all` takes an iterable of promises and returns a single Promise that resolves when all of the promises have resolved. It's useful for running multiple asynchronous operations in parallel. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all).
 </details>
 
-<details><summary>181. Use `Promise.race` for First Settled Promise</summary>
+<details><summary>135. Use `Promise.race` for First Settled Promise</summary>
 `Promise.race` returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects. This is useful for timing out asynchronous operations. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race).
 </details>
 
-<details><summary>182. Use `Array.prototype.find` for Finding Elements</summary>
+<details><summary>136. Use `Array.prototype.find` for Finding Elements</summary>
 The `find` method returns the first element in the array that satisfies the provided testing function. It's useful for finding a single element based on a condition. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find).
 </details>
 
-<details><summary>183. Use `Array.prototype.includes` for Checking Existence</summary>
+<details><summary>137. Use `Array.prototype.includes` for Checking Existence</summary>
 The `includes` method determines whether an array includes a certain value among its entries, returning true or false. It's useful for checking if an array contains a specific element. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes).
 </details>
 
-<details><summary>184. Use `String.prototype.includes` for Substring Search</summary>
+<details><summary>138. Use `String.prototype.includes` for Substring Search</summary>
 The `includes` method determines whether one string may be found within another string, returning true or false. It's useful for checking if a string contains a substring. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes).
 </details>
 
-<details><summary>185. Use `String.prototype.startsWith` and `endsWith`</summary>
+<details><summary>139. Use `String.prototype.startsWith` and `endsWith`</summary>
 The `startsWith` and `endsWith` methods determine whether a string begins or ends with the characters of a specified string, respectively. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith).
 </details>
 
-<details><summary>186. Use `Array.from` to Create Arrays from Iterables</summary>
+<details><summary>140. Use `Array.from` to Create Arrays from Iterables</summary>
 `Array.from` creates a new, shallow-copied Array instance from an array-like or iterable object. It's useful for converting NodeLists to arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 </details>
 
-<details><summary>187. Use `Object.keys`, `Object.values`, and `Object.entries`</summary>
+<details><summary>141. Use `Object.keys`, `Object.values`, and `Object.entries`</summary>
 These methods are useful for converting an object's keys, values, or entries into arrays. They are helpful for iterating over properties. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys), [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values), and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries).
 </details>
 
-<details><summary>188. Use the `in` Operator for Property Checking</summary>
+<details><summary>142. Use the `in` Operator for Property Checking</summary>
 The `in` operator returns true if the specified property is in the specified object or its prototype chain. It's useful for checking if an object has a property. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in).
 </details>
 
-<details><summary>189. Understand `instanceof` for Type Checking</summary>
+<details><summary>143. Understand `instanceof` for Type Checking</summary>
 The `instanceof` operator tests whether the prototype property of a constructor appears anywhere in the prototype chain of an object. It's useful for checking the type of an object. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof).
 </details>
 
-<details><summary>190. Use `Function.prototype.bind` for Explicit `this` Binding</summary>
+<details><summary>144. Use `Function.prototype.bind` for Explicit `this` Binding</summary>
 The `bind` method creates a new function that, when called, has its `this` keyword set to the provided value. It's useful for ensuring `this` is correctly set. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
 </details>
 
-<details><summary>191. Use `Function.prototype.call` and `apply`</summary>
+<details><summary>145. Use `Function.prototype.call` and `apply`</summary>
 The `call` and `apply` methods call a function with a given `this` value and arguments. `call` accepts an argument list, while `apply` accepts a single array of arguments. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply).
 </details>
 
-<details><summary>192. Use `document.createElement` for Dynamic Elements</summary>
+<details><summary>146. Use `document.createElement` for Dynamic Elements</summary>
 The `document.createElement` method creates an HTML element specified by tagName. It's useful for creating elements dynamically. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement).
 </details>
 
-<details><summary>193. Use `element.append`, `prepend`, `before`, and `after`</summary>
+<details><summary>147. Use `element.append`, `prepend`, `before`, and `after`</summary>
 These methods allow you to insert elements relative to an existing element, providing a more flexible way to manage the DOM. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element).
 </details>
 
-<details><summary>194. Use `element.innerHTML` vs `element.textContent`</summary>
+<details><summary>148. Use `element.innerHTML` vs `element.textContent`</summary>
 `innerHTML` sets or gets the HTML or XML markup contained within an element, while `textContent` sets or gets the text content. Use `textContent` to avoid security risks with user-generated content. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent).
 </details>
 
-<details><summary>195. Understand Event Capturing and Bubbling</summary>
+<details><summary>149. Understand Event Capturing and Bubbling</summary>
 Event capturing and bubbling are phases in the event propagation process. Capturing occurs first, moving from the outermost element to the target element, followed by bubbling, which moves back up. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase).
 </details>
 
-<details><summary>196. Use `event.preventDefault` and `event.stopPropagation`</summary>
+<details><summary>150. Use `event.preventDefault` and `event.stopPropagation`</summary>
 `event.preventDefault` cancels the event if it is cancelable, preventing the default action. `event.stopPropagation` prevents further propagation of the current event in the capturing and bubbling phases. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
 </details>
 
-<details><summary>197. Use `try...catch` for Error Handling</summary>
+<details><summary>151. Use `try...catch` for Error Handling</summary>
 The `try...catch` statement allows you to handle exceptions that occur in your code, improving error management and debugging. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch).
 </details>
 
-<details><summary>198. Use `finally` with `try...catch`</summary>
+<details><summary>152. Use `finally` with `try...catch`</summary>
 The `finally` block contains statements to execute after the try and catch blocks, regardless of whether an exception was thrown or caught. It's useful for cleanup code. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#the_finally_block).
 </details>
 
-<details><summary>199. Use Custom Errors for Better Debugging</summary>
+<details><summary>153. Use Custom Errors for Better Debugging</summary>
 Custom errors can provide more meaningful error messages and debugging information. Create a custom error by extending the built-in Error class. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Custom_Error_Types).
 </details>
 
-<details><summary>200. Use ES6 Modules for Better Code Organization</summary>
+<details><summary>154. Use ES6 Modules for Better Code Organization</summary>
 ES6 modules allow you to import and export functions, objects, and primitives from one module to another, promoting better code organization and reuse. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
 </details>
 
-<details><summary>201. Use `Array.from()` to Convert Iterables</summary>
+<details><summary>155. Use `Array.from()` to Convert Iterables</summary>
 `Array.from()` creates a new array from an iterable or array-like object. It's useful for converting NodeLists or other iterables to arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 </details>
 
-<details><summary>202. Display Data with `console.table()`</summary>
+<details><summary>156. Display Data with `console.table()`</summary>
 `console.table()` displays tabular data in the console, making it easier to read and debug objects and arrays. Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Console/table).
 </details>
 
-<details><summary>203. Effortlessly Empty an Array</summary>
+<details><summary>157. Effortlessly Empty an Array</summary>
 You can clear an array by setting its length to 0. This is a quick and efficient way to remove all elements. For example:
 ```javascript
 let numbers = [1, 2, 3, 4];
@@ -777,7 +633,7 @@ console.log(numbers); // []
 ```
 </details>
 
-<details><summary>204. Use `JSON.parse()` for JSON Strings</summary>
+<details><summary>158. Use `JSON.parse()` for JSON Strings</summary>
 `JSON.parse()` converts a JSON string into a JavaScript object, facilitating seamless data manipulation. For example:
 ```javascript
 const jsonStr = '{"name": "John", "age": 25}';
@@ -786,7 +642,7 @@ console.log(person); // {name: 'John', age: 25}
 ```
 </details>
 
-<details><summary>205. Remove Array Duplicates Using `Set`</summary>
+<details><summary>159. Remove Array Duplicates Using `Set`</summary>
 Use `Set` to remove duplicates from an array. For example:
 ```javascript
 const arrWithDuplicates = [1, 12, 2, 13, 4, 4, 13];
@@ -795,7 +651,7 @@ console.log(arrWithoutDuplicates); // [1, 12, 2, 13, 4]
 ```
 </details>
 
-<details><summary>206. Swap Values Using Destructuring</summary>
+<details><summary>160. Swap Values Using Destructuring</summary>
 Destructuring allows you to swap values between variables efficiently. For example:
 ```javascript
 let x = 7, y = 13;
@@ -805,7 +661,7 @@ console.log(y); // 7
 ```
 </details>
 
-<details><summary>207. Use `Object.seal()` to Prevent Property Additions or Removals</summary>
+<details><summary>161. Use `Object.seal()` to Prevent Property Additions or Removals</summary>
 `Object.seal()` prevents adding or removing properties from an object but allows modification of existing properties. For example:
 ```javascript
 const person = { name: 'John', age: 25 };
@@ -816,7 +672,7 @@ console.log(person); // {name: 'John', age: 26}
 ```
 </details>
 
-<details><summary>208. Use `Object.freeze()` to Prevent Object Modifications</summary>
+<details><summary>162. Use `Object.freeze()` to Prevent Object Modifications</summary>
 `Object.freeze()` prevents any changes to an object, including adding, modifying, or deleting properties. For example:
 ```javascript
 const person = { name: 'John', age: 25 };
@@ -826,7 +682,7 @@ console.log(person); // {name: 'John', age: 25}
 ```
 </details>
 
-<details><summary>209. Set Default Values with Logical OR Operator</summary>
+<details><summary>163. Set Default Values with Logical OR Operator</summary>
 Use the logical OR operator to set default values. For example:
 ```javascript
 function greet(name) {
@@ -838,7 +694,7 @@ greet('John'); // Hello, John!
 ```
 </details>
 
-<details><summary>210. Use `Intl.DateTimeFormat` for Date Formatting</summary>
+<details><summary>164. Use `Intl.DateTimeFormat` for Date Formatting</summary>
 `Intl.DateTimeFormat` enables language-sensitive date and time formatting. This is useful for creating user-friendly dates in web applications. For example:
 ```javascript
 const date = new Date();
@@ -848,4 +704,8 @@ const formatter = new Intl.DateTimeFormat('en-US', {
 console.log(formatter.format(date)); // Example: June 11, 2024
 ```
 Learn more on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat).
+</details>
+
+<details><summary>165. Leverage Dynamic Imports for Code Splitting</summary>
+Dynamic imports allow you to load JavaScript modules on demand, which can significantly improve your application's initial load time. Use the `import()` function to dynamically import modules. For example: `import('./module.js').then(module => { /* use the module */ });`. This technique is particularly useful for large applications where you want to load certain features only when they're needed. Learn more about dynamic imports on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports).
 </details>
